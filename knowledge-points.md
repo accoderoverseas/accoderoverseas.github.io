@@ -33,8 +33,8 @@ OA·VO 高频算法专题清单。随着题解更新，每个专题下会逐步�
 
 ## 已收录例题的专题（持续更新）
 
-- **动态规划 · 前后缀分解**：[Google · Split Sort](companies/google/split-sort/)
-- **贪心 + 单调栈**：[Amazon · Promotional Periods](companies/amazon/promotional-periods/)
-- **贪心 + 差分**：[Amazon · Minimum Adjustments](companies/amazon/minimum-adjustments/)
-- **图论建模 · 路径图 + DFS/BFS**：[Capital One · Reconstruct the Journey](companies/capital-one/reconstruct-journey/)
-- **字符串 + 哈希表 + 组合数学**：[TikTok · Count Cyclic Digit Pairs](companies/tiktok/count-cyclic-digit-pairs/)
+- **动态规划 · 前后缀分解**：[Google · Split Sort](/companies/google/split-sort/)
+- **贪心 + 单调栈**：[Amazon · Promotional Periods](/companies/amazon/promotional-periods/)
+- **贪心 + 差分**：[Amazon · Minimum Adjustments](/companies/amazon/minimum-adjustments/)
+- **图论建模 · 路径图 + DFS/BFS**：[Capital One · Reconstruct the Journey](/companies/capital-one/reconstruct-journey/)
+- **字符串 + 哈希表 + 组合数学**：[TikTok · Count Cyclic Digit Pairs](/companies/tiktok/count-cyclic-digit-pairs/)
