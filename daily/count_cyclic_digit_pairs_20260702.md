@@ -22,6 +22,7 @@ Given an array of `N` positive integers `a`, count the number of cyclic pairs `i
 
 
 ## Examples
+
 | # | Input                                              | Output | Note |
 |---|----------------------------------------------------|--------|------|
 | 1 | a = [13, 5604, 31, 2, 13, 4560, 546, 654, 456]     | 5      | 5 组循环对（见下方拆解）。|
