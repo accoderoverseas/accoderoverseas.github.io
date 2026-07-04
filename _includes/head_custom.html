@@ -1,4 +1,5 @@
 <!-- 中英文切换开关 + 站内文案国际化（默认中文） -->
+<!-- 注意：本主题会压缩 HTML（去掉换行），脚本内一律用块注释 /* */，禁止使用 // 行注释，否则整段会被当成注释 -->
 <style>
   /* 双语内容块：默认显示中文，开关开启时显示英文 */
   .i18n-en { display: none; }
@@ -18,24 +19,18 @@
     color: #5c5962; font-weight: 600; letter-spacing: .02em;
     transition: background-color .15s ease, color .15s ease;
   }
-  /* 默认（中文）态：高亮「中」 */
   .i18n-toggle .i18n-opt[data-l="zh"] { background: #7253ed; color: #fff; }
-  /* 英文态：高亮「EN」 */
   html.lang-en .i18n-toggle .i18n-opt[data-l="zh"] { background: transparent; color: #5c5962; }
   html.lang-en .i18n-toggle .i18n-opt[data-l="en"] { background: #7253ed; color: #fff; }
 
-  /* 若无法插入 aux-nav，则浮动到右上角兜底 */
   .i18n-toggle--float { position: fixed; top: 9px; right: 14px; z-index: 1000; }
 </style>
 
 <script>
-  // 尽早根据本地记忆设置语言，避免刷新时中英文闪烁
   (function () {
+    /* 尽早根据本地记忆设置语言，避免刷新时中英文闪烁 */
     try { if (localStorage.getItem('site-lang') === 'en') document.documentElement.classList.add('lang-en'); } catch (e) {}
-  })();
 
-  document.addEventListener('DOMContentLoaded', function () {
-    // 导航标签中→英映射（按链接路径匹配，子项如题目/公司名保持原样）
     var NAV = {
       '/': 'Home',
       '/daily/': 'Daily Problem',
@@ -52,51 +47,60 @@
       return h;
     }
 
-    // 首次记录每个导航项的中文原文，供来回切换
-    document.querySelectorAll('.site-nav .nav-list-link').forEach(function (a) {
-      var key = norm(a.getAttribute('href'));
-      if (NAV[key] && !a.hasAttribute('data-en')) {
-        a.setAttribute('data-zh', a.textContent.trim());
-        a.setAttribute('data-en', NAV[key]);
-      }
-    });
-
     function apply(lang) {
       document.documentElement.classList.toggle('lang-en', lang === 'en');
-      document.querySelectorAll('.site-nav .nav-list-link[data-en]').forEach(function (a) {
-        a.textContent = (lang === 'en') ? a.getAttribute('data-en') : a.getAttribute('data-zh');
-      });
+      var links = document.querySelectorAll('.site-nav .nav-list-link[data-en]');
+      for (var i = 0; i < links.length; i++) {
+        links[i].textContent = (lang === 'en') ? links[i].getAttribute('data-en') : links[i].getAttribute('data-zh');
+      }
       var si = document.getElementById('search-input');
       if (si) si.setAttribute('placeholder', SEARCH_PH[lang]);
       try { localStorage.setItem('site-lang', lang); } catch (e) {}
     }
 
-    // 构建开关
-    var tog = document.createElement('button');
-    tog.type = 'button';
-    tog.className = 'i18n-toggle';
-    tog.setAttribute('aria-label', '切换语言 / Toggle language');
-    tog.innerHTML = '<span class="i18n-opt" data-l="zh">中</span><span class="i18n-opt" data-l="en">EN</span>';
-    tog.addEventListener('click', function () {
-      apply(document.documentElement.classList.contains('lang-en') ? 'zh' : 'en');
-    });
+    function init() {
+      /* 记录每个导航项的中文原文，供来回切换 */
+      var navLinks = document.querySelectorAll('.site-nav .nav-list-link');
+      for (var i = 0; i < navLinks.length; i++) {
+        var a = navLinks[i];
+        var key = norm(a.getAttribute('href'));
+        if (NAV[key] && !a.hasAttribute('data-en')) {
+          a.setAttribute('data-zh', a.textContent.trim());
+          a.setAttribute('data-en', NAV[key]);
+        }
+      }
 
-    // 放到顶部右侧的辅助导航区；放不进去就浮动兜底
-    var auxList = document.querySelector('.aux-nav .aux-nav-list');
-    if (auxList) {
-      var li = document.createElement('li');
-      li.className = 'aux-nav-list-item';
-      li.appendChild(tog);
-      auxList.appendChild(li);
-    } else {
-      var host = document.querySelector('.aux-nav') || document.querySelector('.site-header') || document.body;
-      if (host === document.body || !document.querySelector('.aux-nav')) tog.classList.add('i18n-toggle--float');
-      host.appendChild(tog);
+      /* 构建开关 */
+      var tog = document.createElement('button');
+      tog.type = 'button';
+      tog.className = 'i18n-toggle';
+      tog.setAttribute('aria-label', '切换语言 / Toggle language');
+      tog.innerHTML = '<span class="i18n-opt" data-l="zh">中</span><span class="i18n-opt" data-l="en">EN</span>';
+      tog.addEventListener('click', function () {
+        apply(document.documentElement.classList.contains('lang-en') ? 'zh' : 'en');
+      });
+
+      var auxList = document.querySelector('.aux-nav .aux-nav-list');
+      if (auxList) {
+        var li = document.createElement('li');
+        li.className = 'aux-nav-list-item';
+        li.appendChild(tog);
+        auxList.appendChild(li);
+      } else {
+        var host = document.querySelector('.aux-nav') || document.querySelector('.site-header') || document.body;
+        tog.classList.add('i18n-toggle--float');
+        host.appendChild(tog);
+      }
+
+      var saved = 'zh';
+      try { if (localStorage.getItem('site-lang') === 'en') saved = 'en'; } catch (e) {}
+      apply(saved);
     }
 
-    // 初始按记忆应用（默认中文）
-    var saved = 'zh';
-    try { if (localStorage.getItem('site-lang') === 'en') saved = 'en'; } catch (e) {}
-    apply(saved);
-  });
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
 </script>
