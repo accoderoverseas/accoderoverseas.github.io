@@ -1,6 +1,6 @@
 # accoderoverseas.github.io
 
-OAVO 每日一题 · 北美 / 澳洲 OA·VO 真题讲解站点。基于 [GitHub Pages](https://pages.github.com/) + [just-the-docs](https://just-the-docs.com/) 主题，云端自动构建。
+码上出海 Coding Overseas · 求职 OA/VO 真题讲解 × 留学生 CS 课程辅导站点。基于 [GitHub Pages](https://pages.github.com/) + [just-the-docs](https://just-the-docs.com/) 主题，云端自动构建。
 
 网站地址：https://accoderoverseas.github.io
 
