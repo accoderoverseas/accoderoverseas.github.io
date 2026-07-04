@@ -20,6 +20,7 @@ Returns the number of different ways of obtaining a sorted array by the procedur
 
 
 ## Examples
+
 | # | Input                               | Output | Note                                                      |
 |---|-------------------------------------|--------|-----------------------------------------------------------|
 | 1 | A = [1, 3, 2, 4]<br/>N = 4          | 2      | Two valid positions: <br/>[1] [3, 2, 4]<br/>[1, 3, 2] [4] |
