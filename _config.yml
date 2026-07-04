@@ -1,0 +1,29 @@
+# ============================================================
+#  站点基本信息
+# ============================================================
+title: OAVO 每日一题
+description: 北美 / 澳洲 科技·金融·初创 OA·VO 真题讲解与每日一题 · 在职工程师技术分享
+lang: zh-CN
+
+# ============================================================
+#  主题：用 remote_theme 让 GitHub 云端构建，本地无需安装任何东西
+#  想锁定版本更稳可改成： just-the-docs/just-the-docs@v0.10.1
+# ============================================================
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+# ============================================================
+#  just-the-docs 功能开关
+# ============================================================
+search_enabled: true      # 开启全站搜索
+heading_anchors: true      # 标题自动生成锚点
+color_scheme: light        # 配色（light / dark）
+
+# 右上角 / 页脚辅助链接
+aux_links:
+  "内容仓库 GitHub":
+    - "https://github.com/accoderoverseas/intern-ng-oavo-coding-2027"
+aux_links_new_tab: true
+
+# 代码高亮 + 目录树由主题自动处理
