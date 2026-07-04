@@ -1,3 +1,10 @@
+---
+title: 2026-06-30 · Promotional Periods
+parent: 算法每日一题
+nav_order: 20260630
+permalink: /daily/promotional_periods_20260630/
+---
+
 # Amazon - Promotional Periods
 
 ## Problem

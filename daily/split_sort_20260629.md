@@ -1,3 +1,10 @@
+---
+title: 2026-06-29 · Split Sort
+parent: 算法每日一题
+nav_order: 20260629
+permalink: /daily/split_sort_20260629/
+---
+
 # Google - Split Sort
 
 ## Problem

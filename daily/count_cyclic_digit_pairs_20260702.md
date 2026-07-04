@@ -1,3 +1,10 @@
+---
+title: 2026-07-02 · Count Cyclic Digit Pairs
+parent: 算法每日一题
+nav_order: 20260702
+permalink: /daily/count_cyclic_digit_pairs_20260702/
+---
+
 # TikTok - Count Cyclic Digit Pairs
 
 ## Problem
