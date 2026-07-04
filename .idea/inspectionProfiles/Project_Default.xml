@@ -1,0 +1,22 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyChainedComparisonsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoreConstantInTheMiddle" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="PythonDemo_221013.generateReceipt" />
+          <option value="list.__sub__" />
+          <option value="float.__setitem__" />
+          <option value="PythonAlgoDemo_DSGame_20231022.data_structures.bst.data_structures" />
+          <option value="blueprints.forum_bp" />
+          <option value="blueprints.user_bp" />
+          <option value="dict.__getitem__" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
