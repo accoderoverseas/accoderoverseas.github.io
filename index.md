@@ -34,6 +34,7 @@ nav_order: 1
 
 ## 快速开始
 
+- 📆 [算法每日一题](/daily/)：每个工作日更新一篇，按统一结构拆解建立解题框架
 - 📌 [按公司刷题](/companies/)：按目标公司浏览真题讲解（Google / Amazon / Capital One / TikTok …）
 - 🧠 [知识点索引](/knowledge-points/)：按算法专题查找（滑动窗口 / 单调栈 / 差分 / 图论 …）
 - ✉️ [联系我](/contact/)：答疑、资料领取、限时陪练、课程辅导
