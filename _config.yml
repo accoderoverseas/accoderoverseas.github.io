@@ -12,7 +12,7 @@ permalink: pretty
 #  主题：用 remote_theme 让 GitHub 云端构建，本地无需安装任何东西
 #  想锁定版本更稳可改成： just-the-docs/just-the-docs@v0.10.1
 # ============================================================
-remote_theme: just-the-docs/just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.10.1
 plugins:
   - jekyll-remote-theme
 
