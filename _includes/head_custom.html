@@ -31,21 +31,15 @@
     /* 尽早根据本地记忆设置语言，避免刷新时中英文闪烁 */
     try { if (localStorage.getItem('site-lang') === 'en') document.documentElement.classList.add('lang-en'); } catch (e) {}
 
+    /* 按导航项的中文文案匹配（比 href 稳妥：当前页的导航项没有 href；子项如题名/公司名不在表内故不翻译） */
     var NAV = {
-      '/': 'Home',
-      '/daily/': 'Daily Problem',
-      '/companies/': 'By Company',
-      '/knowledge-points/': 'Knowledge Points',
-      '/contact/': 'Contact'
+      '首页': 'Home',
+      '算法每日一题': 'Daily Problem',
+      '按公司刷题': 'By Company',
+      '知识点索引': 'Knowledge Points',
+      '联系我': 'Contact'
     };
     var SEARCH_PH = { zh: '搜索题目 / 公司 / 知识点', en: 'Search problems / companies / topics' };
-
-    function norm(h) {
-      if (!h) return h;
-      try { h = new URL(h, location.origin).pathname; } catch (e) {}
-      if (h.length > 1 && h.charAt(h.length - 1) !== '/') h += '/';
-      return h;
-    }
 
     function apply(lang) {
       document.documentElement.classList.toggle('lang-en', lang === 'en');
@@ -63,10 +57,10 @@
       var navLinks = document.querySelectorAll('.site-nav .nav-list-link');
       for (var i = 0; i < navLinks.length; i++) {
         var a = navLinks[i];
-        var key = norm(a.getAttribute('href'));
-        if (NAV[key] && !a.hasAttribute('data-en')) {
-          a.setAttribute('data-zh', a.textContent.trim());
-          a.setAttribute('data-en', NAV[key]);
+        var label = a.textContent.trim();
+        if (NAV[label] && !a.hasAttribute('data-en')) {
+          a.setAttribute('data-zh', label);
+          a.setAttribute('data-en', NAV[label]);
         }
       }
 
