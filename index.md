@@ -4,6 +4,9 @@ nav_order: 1
 ---
 
 # 码上出海 Coding Overseas
+
+<div class="i18n-zh" markdown="1">
+
 ### OA/VO 真题讲解 & 留学生课程辅导
 
 面向 **北美 / 澳洲 / 欧洲 / 亚洲** 求职的留学生，覆盖 **科技 / 金融 / 初创** 公司的 OA（Online Assessment）与 VO（Virtual On-site）环节；同时提供**留学生 CS 课程**辅导。
@@ -40,3 +43,46 @@ nav_order: 1
 - ✉️ [联系我](/contact/)：答疑、资料领取、限时陪练、课程辅导
 
 > 💡 左上角的搜索框可以直接搜题名、公司名或知识点。
+
+</div>
+
+<div class="i18n-en" markdown="1">
+
+### OA/VO Problem Walkthroughs & CS Course Tutoring for Students Abroad
+
+For international students job-hunting in **North America / Australia / Europe / Asia**, covering the **OA (Online Assessment)** and **VO (Virtual Onsite)** rounds at **tech / finance / startup** companies — plus **CS course tutoring** for students abroad.
+Delivered **1-on-1, personally**, by a working engineer (**algorithms + full-stack + competitive-programming** background), with **continuous, real-time updates**.
+
+Every solution is broken down with the same structure, so you build a transferable problem-solving framework:
+
+> Problem → Constraints → Examples → **Signal Recognition** (which features hint at which approach) → **Optimal Idea** → Complexity → **Accepted Code**
+
+---
+
+## What I Offer
+
+**🎯 Job Hunting (OA/VO)**
+- **Daily OA/VO Problem**: a new post on (in principle) every business day, building a transferable framework;
+- **Real OA/VO Breakdowns**: high-frequency patterns and signal-recognition tips;
+- **OA/VO Practice & Q&A / Timed Assist**: year-round — live Q&A, error-correction, mock, timed debugging;
+- **Resume Mock / Review / Career Planning**: targeted polishing and a clear improvement roadmap.
+
+**📚 CS Courses for Students Abroad**
+- **CS Fundamentals Tutoring**: 1v1 / 1v2, customized to your syllabus and pace — preview / review / recap;
+- **CS Project Guidance**: hands-on — set up the framework, implement core logic, pass the online judge, wrap up with a recap;
+- Covering popular **COMP / INFO / DATA / STAT** courses across algorithms / full-stack / competitive programming.
+
+> Want details or ready to start? → **[✉️ Contact Me](/contact/)** (1-on-1; quick questions are free)
+
+---
+
+## Quick Start
+
+- 📆 [Daily Problem](/daily/): a new problem every business day, broken down with one consistent structure
+- 📌 [By Company](/companies/): browse walkthroughs by target company (Google / Amazon / Capital One / TikTok …)
+- 🧠 [Knowledge Points](/knowledge-points/): find problems by topic (sliding window / monotonic stack / difference array / graphs …)
+- ✉️ [Contact Me](/contact/): Q&A, free resources, timed practice, course tutoring
+
+> 💡 The search box at the top-left searches problem names, companies, and topics.
+
+</div>

@@ -1,0 +1,102 @@
+<!-- 中英文切换开关 + 站内文案国际化（默认中文） -->
+<style>
+  /* 双语内容块：默认显示中文，开关开启时显示英文 */
+  .i18n-en { display: none; }
+  html.lang-en .i18n-zh { display: none; }
+  html.lang-en .i18n-en { display: block; }
+
+  /* 顶部右侧的分段式语言开关 */
+  .i18n-toggle {
+    display: inline-flex; align-items: stretch;
+    height: 26px; padding: 0; margin-left: .5rem;
+    border: 1px solid #d0cfe0; border-radius: 999px; overflow: hidden;
+    background: #fff; cursor: pointer; user-select: none;
+    font-size: 12px; line-height: 1; font-family: inherit;
+  }
+  .i18n-toggle .i18n-opt {
+    display: flex; align-items: center; padding: 0 11px;
+    color: #5c5962; font-weight: 600; letter-spacing: .02em;
+    transition: background-color .15s ease, color .15s ease;
+  }
+  /* 默认（中文）态：高亮「中」 */
+  .i18n-toggle .i18n-opt[data-l="zh"] { background: #7253ed; color: #fff; }
+  /* 英文态：高亮「EN」 */
+  html.lang-en .i18n-toggle .i18n-opt[data-l="zh"] { background: transparent; color: #5c5962; }
+  html.lang-en .i18n-toggle .i18n-opt[data-l="en"] { background: #7253ed; color: #fff; }
+
+  /* 若无法插入 aux-nav，则浮动到右上角兜底 */
+  .i18n-toggle--float { position: fixed; top: 9px; right: 14px; z-index: 1000; }
+</style>
+
+<script>
+  // 尽早根据本地记忆设置语言，避免刷新时中英文闪烁
+  (function () {
+    try { if (localStorage.getItem('site-lang') === 'en') document.documentElement.classList.add('lang-en'); } catch (e) {}
+  })();
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // 导航标签中→英映射（按链接路径匹配，子项如题目/公司名保持原样）
+    var NAV = {
+      '/': 'Home',
+      '/daily/': 'Daily Problem',
+      '/companies/': 'By Company',
+      '/knowledge-points/': 'Knowledge Points',
+      '/contact/': 'Contact'
+    };
+    var SEARCH_PH = { zh: '搜索题目 / 公司 / 知识点', en: 'Search problems / companies / topics' };
+
+    function norm(h) {
+      if (!h) return h;
+      try { h = new URL(h, location.origin).pathname; } catch (e) {}
+      if (h.length > 1 && h.charAt(h.length - 1) !== '/') h += '/';
+      return h;
+    }
+
+    // 首次记录每个导航项的中文原文，供来回切换
+    document.querySelectorAll('.site-nav .nav-list-link').forEach(function (a) {
+      var key = norm(a.getAttribute('href'));
+      if (NAV[key] && !a.hasAttribute('data-en')) {
+        a.setAttribute('data-zh', a.textContent.trim());
+        a.setAttribute('data-en', NAV[key]);
+      }
+    });
+
+    function apply(lang) {
+      document.documentElement.classList.toggle('lang-en', lang === 'en');
+      document.querySelectorAll('.site-nav .nav-list-link[data-en]').forEach(function (a) {
+        a.textContent = (lang === 'en') ? a.getAttribute('data-en') : a.getAttribute('data-zh');
+      });
+      var si = document.getElementById('search-input');
+      if (si) si.setAttribute('placeholder', SEARCH_PH[lang]);
+      try { localStorage.setItem('site-lang', lang); } catch (e) {}
+    }
+
+    // 构建开关
+    var tog = document.createElement('button');
+    tog.type = 'button';
+    tog.className = 'i18n-toggle';
+    tog.setAttribute('aria-label', '切换语言 / Toggle language');
+    tog.innerHTML = '<span class="i18n-opt" data-l="zh">中</span><span class="i18n-opt" data-l="en">EN</span>';
+    tog.addEventListener('click', function () {
+      apply(document.documentElement.classList.contains('lang-en') ? 'zh' : 'en');
+    });
+
+    // 放到顶部右侧的辅助导航区；放不进去就浮动兜底
+    var auxList = document.querySelector('.aux-nav .aux-nav-list');
+    if (auxList) {
+      var li = document.createElement('li');
+      li.className = 'aux-nav-list-item';
+      li.appendChild(tog);
+      auxList.appendChild(li);
+    } else {
+      var host = document.querySelector('.aux-nav') || document.querySelector('.site-header') || document.body;
+      if (host === document.body || !document.querySelector('.aux-nav')) tog.classList.add('i18n-toggle--float');
+      host.appendChild(tog);
+    }
+
+    // 初始按记忆应用（默认中文）
+    var saved = 'zh';
+    try { if (localStorage.getItem('site-lang') === 'en') saved = 'en'; } catch (e) {}
+    apply(saved);
+  });
+</script>

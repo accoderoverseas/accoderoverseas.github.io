@@ -4,6 +4,8 @@ nav_order: 5
 permalink: /contact/
 ---
 
+<div class="i18n-zh" markdown="1">
+
 # 联系我 (Contact Me)
 
 ## 你是不是也遇到这些情况？(Is This You?)
@@ -89,3 +91,93 @@ A：线上腾讯会议，1v1 / 1v2；求职陪练与答疑随时进行。
 - **Q：时区对不上怎么办？**  
 A：提前约时间即可，海外时区都能协调。
 
+</div>
+
+<div class="i18n-en" markdown="1">
+
+# Contact Me
+
+## Is This You?
+- You've applied to many roles abroad but keep **failing OA / freezing in VO**, unsure what's missing or how to improve systematically;
+- You've done plenty of problems yet **understand the solution but can't solve it yourself** — no transferable framework;
+- Your CS courses (Programming / DSA / OS / Network / AI / ML, etc.) are **hard to keep up with, assignments/projects feel impossible to start, and your mind goes blank preparing for midterms/finals**;
+- You want a tutor but **worry about agencies outsourcing the work, getting something other than promised, or paying and being left without real follow-up**.
+
+If any of these hits home — or you're stuck on a similar "**tough case**" in study or job hunting — don't miss what's below. This is exactly what I do!
+
+---
+
+## About Me
+CS bachelor's + master's (formal training), backend engineer → algorithm engineer, **11 years of experience**, with a triple background in **algorithms + full-stack + competitive programming**. Areas include but are not limited to:
+
+- **Algorithms**: Data Structures & Algorithms (DSA), Machine Learning (ML), Deep Learning (DL), Data Science (DS), Large Language Models (LLM), Agents
+- **Full-stack**: programming languages (C/C++/Java/JS/Python), Operating Systems (OS), Networking, Databases, System Design (SD), Infrastructure (Infra), enterprise frameworks (Vue / Spring Boot / Spring Cloud / Flask)
+- **Competitive programming**: LeetCode 2600+ / CodeForces 2000+ / AtCoder 1700+; awards including ACM Silver, Lanqiao Cup National First Prize, Kaggle Silver, and more
+
+---
+
+## What I Can Do for You
+A working algorithm engineer, focused on **intern / new-grad** job hunting across **North America / Australia / Europe / Asia**, plus **CS course tutoring** for students abroad. Every service is **delivered 1-on-1, personally by me**.
+
+**🎯 Job Hunting (OA/VO)**
+- **Daily OA/VO Problem**: a new post on (in principle) every business day, broken down with one consistent structure to build a transferable framework;
+- **Real OA/VO Breakdowns**: high-frequency patterns and signal-recognition tips, updated from time to time;
+- **OA/VO Practice & Q&A**: year-round — live Q&A, error-correction, mock;
+- **OA/VO Timed Assist**: year-round — timed coding and debugging to AC;
+- **Resume Mock**: year-round — targeted polishing and application advice;
+- **Review / Career Planning**: periodic review of weak spots and an actionable improvement plan.
+
+**📚 CS Courses for Students Abroad**
+- **CS Fundamentals Tutoring**: year-round, online via Tencent Meeting, 1v1 / 1v2; book at least 1 day ahead; **customized to your syllabus and pace — preview / review / recap**;
+- **CS Project Guidance**: year-round, online via Tencent Meeting, 1v1; hands-on help to **set up the project framework, implement core logic, pass the online judge, and wrap up with a recap**;
+- Covering popular directions such as COMP/INFO/DATA/STAT — I've studied and taught the popular algorithm / full-stack / competitive-programming courses, and have tutored both online and offline!
+
+> I deliver "**competitiveness improvement**" — helping you truly master what you should know — and make **no guarantee of passing** in any form (outcomes depend on the market, your own effort, and luck).
+
+---
+
+## How to Start
+1. **Free consultation**: reach me via any method below and briefly describe your **goal / time zone / timeline / current blockers**;
+2. **Assessment & trial lesson**: I assess feasibility and, if helpful, give a **trial lesson** first — we start only if it's a good fit;
+3. **Custom outline & schedule**: I put together an outline and schedule with clear deliverables;
+4. **Delivery & review**: I follow through personally, with periodic reviews and iteration based on your feedback.
+
+> ⏱️ Under normal circumstances: WeChat / RedBook **within 6 hours**, email **within 24 hours** (occasional delay from time zones — I always reply once I see it). Quick questions are free; let's talk it through first, no pressure.
+
+---
+
+## Contacts
+Any of these will reach me ~
+- 📮 E-mail: **`accoderoverseas@gmail.com`**
+- 🛰️ WeChat: **`ac_coder_tutor`**
+- 📕 RedBook: **`ac_coder_tutor`** or **`ac-coder的算法coding笔记`**
+- 💬 Free resources: DM the keyword to get **《OA/VO Real-Problem Explanations》**, **《OA High-Frequency Pattern Cheat Sheet》**, and more
+
+---
+
+## Why Me
+- **Delivered 1-on-1 by me — no agency / institution / third party**: I follow through personally, no outsourcing, no reselling; bring me your problems with confidence;
+- **Professional scheduling, assess first then start**: I carefully assess feasibility and draft an outline before starting; a trial lesson is available if needed;
+- **Fair pricing**: **10–20% below** the market average — no rat race, no "IQ tax";
+- **Privacy respected**: your consultation content and personal information are kept strictly confidential.
+
+**What I won't do**: any form of **academic dishonesty**, or any kind of **"guaranteed offer."** What I do is help you build a solid foundation and truly master the material through professional tutoring and practice support — raising your **core competitiveness**.
+
+> A note of caution: many agencies / institutions outsource student needs to others or third parties, leading to undelivered work or even financial loss — this is both dishonest and disruptive to the market. Keep your eyes open: **for professional work, find a professional.**
+
+---
+
+## FAQ
+- **Q: Complete beginner / very tight on time — is it still doable?**  
+A: Start with a free consultation; I'll give you an honest assessment and won't take it on if it doesn't make sense.  
+
+- **Q: How is the content customized?**  
+A: An outline built around your goals, syllabus, and pace — one plan per person.  
+
+- **Q: Lesson format?**  
+A: Online via Tencent Meeting, 1v1 / 1v2; job-hunt practice and Q&A anytime.
+
+- **Q: What if time zones don't line up?**  
+A: Just schedule ahead — all overseas time zones can be coordinated.
+
+</div>

@@ -23,10 +23,6 @@ search_enabled: true      # 开启全站搜索
 heading_anchors: true      # 标题自动生成锚点
 color_scheme: light        # 配色（light / dark）
 
-# 右上角 / 页脚辅助链接
-aux_links:
-  "内容仓库 GitHub":
-    - "https://github.com/accoderoverseas/intern-ng-oavo-coding-2027"
-aux_links_new_tab: true
+# 右上角改为中英文切换开关（见 _includes/head_custom.html），不再放 GitHub 辅助链接
 
 # 代码高亮 + 目录树由主题自动处理
