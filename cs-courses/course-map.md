@@ -2,12 +2,20 @@
 title: 学校课程图谱
 parent: 留学生CS课程
 nav_order: 2
+has_children: true
 permalink: /cs-courses/course-map/
 ---
 
 # 学校课程图谱
 
-各校 CS 课程体系与**先修 / 选课脉络**（持续收录）。帮你看清「一门课的前置是什么、往后接什么」，规划学习与选课路线。
+按**地区 → 学校**汇总热门且重要的 CS 课程，帮你看清「一门课学什么、难不难、值不值得选、往后接什么」，并为已选课同学搭好知识体系。
+
+点击左侧展开，按地区查看（持续收录）：
+
+- 🌎 [北美](/cs-courses/course-map/north-america/)
+- 🦘 [澳洲](/cs-courses/course-map/australia/)
+- 🏰 [欧洲](/cs-courses/course-map/europe/)
+- 🏯 [亚洲](/cs-courses/course-map/asia/)
 
 ## 通用 CS 学习主线（先修脉络）
 
@@ -17,11 +25,5 @@ permalink: /cs-courses/course-map/
                           ├→ 数据库 ─────┘
               离散数学 ───┴→ 算法进阶 → 机器学习 / 人工智能 → 数据科学 / 大模型
 ```
-
-## 按学校收录（持续更新）
-
-| 学校 | 课程体系 | 备注 |
-|---|---|---|
-| （示例）待收录 | COMP / INFO / DATA / STAT 等 | 按需补充具体课程与先修关系 |
 
 > 想按你所在学校的课程编号定制预习 / 复习方案与选课建议？→ [联系我](/contact/) 提供课程大纲即可。
