@@ -1,7 +1,7 @@
 ---
 title: Reconstruct the Journey
 parent: Capital One
-grand_parent: 按公司刷题
+grand_parent: 求职找工OA/VO真题拆解
 nav_order: 1
 ---
 

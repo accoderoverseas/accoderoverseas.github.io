@@ -1,7 +1,7 @@
 ---
 title: Minimum Adjustments
 parent: Amazon
-grand_parent: 按公司刷题
+grand_parent: 求职找工OA/VO真题拆解
 nav_order: 2
 ---
 

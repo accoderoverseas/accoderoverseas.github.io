@@ -11,16 +11,18 @@ _config.yml            站点配置（主题、搜索、辅助链接）
 index.md               首页
 daily.md               “算法每日一题”栏目页（左侧可展开）
 daily/<日期-题名>.md    每篇每日一题（front matter 里 parent: 算法每日一题）
-companies.md           “按公司刷题”栏目页
+companies.md           “求职找工OA/VO真题拆解”栏目页（permalink 仍为 /companies/）
 companies/<公司>/       每个公司一个目录，index.md 为公司页，其余为题解
-knowledge-points.md    知识点索引
+knowledge-points.md    “算法数据结构知识点速查”（parent: 求职找工OA/VO真题拆解，permalink /knowledge-points/）
+cs-courses.md          “留学生CS课程”栏目页
+cs-courses/            子目录：cheatsheet.md（CS课程速查）、course-map.md（学校课程图谱）
 contact.md             联系方式
 ```
 
 ## 新增一篇题解（按公司）
 
 1. 在 `companies/<公司>/` 下新建 `xxx.md`；
-2. 顶部加 front matter（`title` / `parent` / `grand_parent: 按公司刷题` / `nav_order`）；
+2. 顶部加 front matter（`title` / `parent` / `grand_parent: 求职找工OA/VO真题拆解` / `nav_order`）；
 3. `git add . && git commit && git push`，GitHub 自动重建，约 1–2 分钟生效。
 
 ## 新增一篇每日一题

@@ -1,10 +1,11 @@
 ---
-title: 知识点索引
-nav_order: 4
+title: 算法数据结构知识点速查
+parent: 求职找工OA/VO真题拆解
+nav_order: 5
 permalink: /knowledge-points/
 ---
 
-# 知识点索引
+# 算法数据结构知识点速查
 
 OA·VO 高频算法专题清单。随着题解更新，每个专题下会逐步挂上对应的例题。
 

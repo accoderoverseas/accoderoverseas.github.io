@@ -38,8 +38,8 @@ nav_order: 1
 ## 快速开始
 
 - 📆 [算法每日一题](/daily/)：每个工作日更新一篇，按统一结构拆解建立解题框架
-- 📌 [按公司刷题](/companies/)：按目标公司浏览真题讲解（Google / Amazon / Capital One / TikTok …）
-- 🧠 [知识点索引](/knowledge-points/)：按算法专题查找（滑动窗口 / 单调栈 / 差分 / 图论 …）
+- 📌 [求职找工OA/VO真题拆解](/companies/)：按公司拆解真题（Google / Amazon / Capital One / TikTok …）＋ [算法数据结构知识点速查](/knowledge-points/)
+- 🎓 [留学生CS课程](/cs-courses/)：CS课程速查、学校课程图谱，按课程大纲定制辅导
 - ✉️ [联系我](/contact/)：答疑、资料领取、限时陪练、课程辅导
 
 > 💡 左上角的搜索框可以直接搜题名、公司名或知识点。
@@ -79,8 +79,8 @@ Every solution is broken down with the same structure, so you build a transferab
 ## Quick Start
 
 - 📆 [Daily Problem](/daily/): a new problem every business day, broken down with one consistent structure
-- 📌 [By Company](/companies/): browse walkthroughs by target company (Google / Amazon / Capital One / TikTok …)
-- 🧠 [Knowledge Points](/knowledge-points/): find problems by topic (sliding window / monotonic stack / difference array / graphs …)
+- 📌 [OA/VO Problem Breakdowns](/companies/): real problems broken down by company (Google / Amazon / Capital One / TikTok …) ＋ [DSA Quick Reference](/knowledge-points/)
+- 🎓 [CS Courses (Study Abroad)](/cs-courses/): CS course quick reference, university course map, tutoring tailored to your syllabus
 - ✉️ [Contact Me](/contact/): Q&A, free resources, timed practice, course tutoring
 
 > 💡 The search box at the top-left searches problem names, companies, and topics.
