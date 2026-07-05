@@ -24,6 +24,17 @@
   html.lang-en .i18n-toggle .i18n-opt[data-l="en"] { background: #7253ed; color: #fff; }
 
   .i18n-toggle--float { position: fixed; top: 9px; right: 14px; z-index: 1000; }
+
+  /* 去掉左下角「This site uses Just the Docs…」页脚文本 */
+  .site-footer { display: none !important; }
+
+  /* 水印的「无 JS」兜底：JS 正常时会给 <html> 加 .wm-js 使其让位给自愈水印，避免叠加变深 */
+  html:not(.wm-js)::before {
+    content: ""; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    pointer-events: none; z-index: 2147483600;
+    background-repeat: repeat; background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27300%27%20height%3D%27190%27%3E%3Ctext%20x%3D%27150%27%20y%3D%27150%27%20transform%3D%27rotate%2830%20150%2095%29%27%20text-anchor%3D%27middle%27%20font-family%3D%27Arial%2C%20Helvetica%2C%20sans-serif%27%20font-size%3D%2716%27%20fill%3D%27%239aa0a6%27%20fill-opacity%3D%270.16%27%3Eby%3A%20ac_coder_tutor%3C%2Ftext%3E%3C%2Fsvg%3E");
+  }
 </style>
 
 <script>
@@ -96,5 +107,77 @@
     } else {
       init();
     }
+  })();
+</script>
+
+<script>
+  (function () {
+    /* 全站防伪水印：左上→右下、约 30° 倾斜、浅灰高透明、平铺；不拦截点击；自愈守卫防篡改 */
+    /* 说明：纯前端水印无法做到绝对不可篡改（用户可禁用 JS 等），此处用自愈方式让删除/改样式后立即恢复，抵御常规手段 */
+    var TXT = 'by: ac_coder_tutor';
+
+    function svgUrl() {
+      var svg = "<svg xmlns='http://www.w3.org/2000/svg' width='300' height='190'>"
+        + "<text x='150' y='150' transform='rotate(30 150 95)' text-anchor='middle' "
+        + "font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#9aa0a6' fill-opacity='0.16'>"
+        + TXT + "</text></svg>";
+      return 'url("data:image/svg+xml,' + encodeURIComponent(svg) + '")';
+    }
+
+    /* 目标样式（每条都加 !important，抵抗覆盖）；固定视口、极高层级、穿透点击 */
+    var CSS = ('position:fixed;top:0;left:0;right:0;bottom:0;width:100vw;height:100vh;'
+      + 'margin:0;padding:0;border:0;pointer-events:none;user-select:none;'
+      + 'z-index:2147483600;opacity:1;display:block;visibility:visible;'
+      + 'background-repeat:repeat;background-position:0 0;background-image:' + svgUrl() + ';')
+      .replace(/;/g, ' !important;');
+
+    var mark = null;
+    var attrObserver = null;
+
+    function build() {
+      mark = document.createElement('div');
+      mark.setAttribute('aria-hidden', 'true');
+      mark.style.cssText = CSS;
+      (document.body || document.documentElement).appendChild(mark);
+      /* 盯住这一水印节点自身的属性改动，被改立刻恢复 */
+      try {
+        if (attrObserver) attrObserver.disconnect();
+        attrObserver = new MutationObserver(function () { ensure(); });
+        attrObserver.observe(mark, { attributes: true, attributeFilter: ['style', 'class'] });
+      } catch (e) {}
+    }
+
+    function ensure() {
+      /* 保持 .wm-js，让 CSS 兜底水印让位，避免叠加 */
+      var de = document.documentElement;
+      if (de && !de.classList.contains('wm-js')) de.classList.add('wm-js');
+      /* 被删除 / 未挂载 → 重建 */
+      if (!mark || !mark.isConnected) { build(); return; }
+      /* 关键样式被改（隐藏、透明、层级、点击穿透、定位、背景被清） → 整体恢复 */
+      var s = mark.style;
+      if (s.display === 'none' || s.visibility === 'hidden'
+          || s.opacity !== '1' || s.position !== 'fixed'
+          || s.pointerEvents !== 'none'
+          || (s.backgroundImage || '').indexOf('svg') === -1
+          || (s.cssText || '').indexOf('2147483600') === -1) {
+        s.cssText = CSS;
+      }
+    }
+
+    function start() {
+      /* 标记 JS 生效：让位 CSS 兜底水印，改用可自愈的覆盖层 */
+      try { document.documentElement.classList.add('wm-js'); } catch (e) {}
+      build();
+      try {
+        /* 盯住整棵树的增删，水印被移除时重建 */
+        var mo = new MutationObserver(function () { ensure(); });
+        mo.observe(document.documentElement, { childList: true, subtree: true });
+      } catch (e) {}
+      /* 兜底轮询，防止 observer 被移除/绕过 */
+      setInterval(ensure, 700);
+    }
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+    else start();
   })();
 </script>
