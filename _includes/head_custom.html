@@ -31,8 +31,17 @@
 
   .i18n-toggle--float { position: fixed; top: 9px; right: 14px; z-index: 1000; }
 
-  /* 去掉左下角「This site uses Just the Docs…」页脚文本 */
-  .site-footer { display: none !important; }
+  /* 左下角页脚：隐藏默认「This site uses Just the Docs…」版权，改为显示联系方式 */
+  /* 先用 visibility 隐藏，JS 填好联系方式后再显示，避免默认文案闪现 */
+  .site-footer { visibility: hidden !important; }
+  .site-footer.contact-ready { visibility: visible !important; padding: 14px 13px !important; }
+  .contact-footer { font-size: 11px; line-height: 1.5; }
+  .contact-footer .cf-row { white-space: nowrap; margin-bottom: 7px; }
+  .contact-footer .cf-row:last-child { margin-bottom: 0; }
+  .contact-footer .cf-k { color: #5c5962; }
+  .contact-footer .cf-v { color: #27262b; font-weight: 600; }
+  .contact-footer a { color: inherit; text-decoration: none; }
+  .contact-footer a:hover { text-decoration: underline; }
 
   /* 水印的「无 JS」兜底：JS 正常时会给 <html> 加 .wm-js 使其让位给自愈水印，避免叠加变深 */
   html:not(.wm-js)::before {
@@ -192,5 +201,29 @@
 
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
     else start();
+  })();
+</script>
+
+<script>
+  (function () {
+    /* 左下角页脚改为联系方式（默认版权已由 CSS visibility 隐藏，避免闪现） */
+    function build() {
+      var f = document.querySelector('.site-footer');
+      if (!f) return;
+      var rows = [
+        ['📮 邮箱（E-mail）', '<a href="mailto:accoderoverseas@gmail.com">accoderoverseas@gmail.com</a>'],
+        ['🛰️ 微信（WeChat）', 'ac_coder_tutor'],
+        ['📕 小红书（RedBook）', 'ac_coder_tutor']
+      ];
+      var html = '<div class="contact-footer">';
+      for (var i = 0; i < rows.length; i++) {
+        html += '<div class="cf-row"><span class="cf-k">' + rows[i][0] + '：</span><span class="cf-v">' + rows[i][1] + '</span></div>';
+      }
+      html += '</div>';
+      f.innerHTML = html;
+      f.classList.add('contact-ready');
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build);
+    else build();
   })();
 </script>
