@@ -3,37 +3,22 @@ title: 澳洲
 parent: 学校课程图谱
 grand_parent: 留学生CS课程
 nav_order: 2
+has_children: true
 permalink: /cs-courses/course-map/australia/
 ---
 
 # 澳洲 · 学校课程图谱
 
-按学校汇总 **澳洲** 地区热门且重要的 CS 课程。数据持续补充中，表格里「待补充」会逐步完善——也欢迎在 [联系我](/contact/) 时告诉我你的学校 / 课程，我可优先整理。
+按学校汇总 **澳洲** 地区热门且重要的 CS 课程，覆盖以下 7 所我熟悉、可安排辅导 / 陪练的学校（点击左侧展开，或从下方进入）：
 
-## 1. 选课速览：本学期能选哪些 & 是否值得选
+- 🏛️ [澳大利亚国立大学 ANU](/cs-courses/course-map/australia/anu/)
+- 🏛️ [新南威尔士大学 UNSW](/cs-courses/course-map/australia/unsw/)
+- 🏛️ [悉尼大学 USYD](/cs-courses/course-map/australia/usyd/)
+- 🏛️ [莫纳什大学 Monash](/cs-courses/course-map/australia/monash/)
+- 🏛️ [昆士兰大学 UQ](/cs-courses/course-map/australia/uq/)
+- 🏛️ [墨尔本大学 UniMelb](/cs-courses/course-map/australia/unimelb/)
+- 🏛️ [悉尼科技大学 UTS](/cs-courses/course-map/australia/uts/)
 
-> 快速圈定课程范围，减少手动搜集整理的时间。
+每所学校页面按**本科 / 研究生**与课程类型整理其 CS 课程体系；课程的**简介 · 主要知识点 · 整体难度 · 建议学习路线**正按各校 **2026 官方 handbook / outline** 逐门核对补充。
 
-| 学校 | 课程代码 · 名称 | 核心知识点 | 整体难度 | 分数分布（评估构成） | 是否值得选 | 备注 |
-|---|---|---|---|---|---|---|
-| （示例）University of Melbourne | COMP20003 Algorithms & Data Structures | 待补充 | 待补充 | 待补充 | 待补充 | 待补充 |
-| UNSW | COMP2521 Data Structures & Algorithms | 待补充 | 待补充 | 待补充 | 待补充 | 待补充 |
-| Monash | FIT2004 Algorithms & Data Structures | 待补充 | 待补充 | 待补充 | 待补充 | 待补充 |
-
-## 2. 知识体系 / 思维导图
-
-> 帮已选课同学建立整体框架，明确该把时间重点投在哪些知识点 / 环节。
-
-- 每门重点课会配一张知识体系图（模块 → 关键概念 → 典型考点）。
-- 待补充。
-
-## 3. 重点笔记 & 典型例题
-
-> 面向 midterm / final，尤其是带 **hurdle** 的科目（某部分需达线才通过）。
-
-- 重点知识笔记 + 典型例题解析。
-- 待补充。
-
-## 4. 学起来吃力？别一个人硬扛
-
-跟不上进度、Project 无从下手、考前复习没头绪——**[联系我](/contact/)** 做 1v1 辅导 / 陪练，帮你把知识体系搭稳、把课程彻底弄懂吃透，从容应对 midterm / final 与 hurdle，并建立长期稳定的合作。
+> 想优先看某所学校的某几门课，或需要按你的课程大纲定制辅导？→ **[联系我](/contact/)**。
