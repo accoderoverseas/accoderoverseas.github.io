@@ -68,6 +68,12 @@ Given an array of `N` positive integers `a`, count the number of cyclic pairs `i
 
 ## AC Code
 ```python
+# ------------------------------------------------------------
+#  ac_coder_tutor  ·  Daily Algorithm Problem (OA/VO)
+#  RedBook / WeChat: ac_coder_tutor  |  accoderoverseas@gmail.com
+#  OA/VO breakdowns & CS course tutoring for students abroad
+# ------------------------------------------------------------
+
 import collections
 
 
@@ -101,9 +107,3 @@ if __name__ == '__main__':
     print(solution([11, 11]))  # 1
     print(solution([1212, 2121]))  # 1
 ```
-
----
-
-> **👤 ac_coder_tutor** — 在职工程师的「算法每日一题」  
-> 📕 小红书 / 🛰️ 微信 `ac_coder_tutor` · 📮 `accoderoverseas@gmail.com`  
-> 找工 OA/VO 真题拆解 · 留学生 CS 课程辅导 → [联系我](/contact/)

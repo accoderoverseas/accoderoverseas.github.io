@@ -49,6 +49,12 @@ All integers in orders are distinct.
 
 ## AC Code
 ```python
+# ------------------------------------------------------------
+#  ac_coder_tutor  ·  Daily Algorithm Problem (OA/VO)
+#  RedBook / WeChat: ac_coder_tutor  |  accoderoverseas@gmail.com
+#  OA/VO breakdowns & CS course tutoring for students abroad
+# ------------------------------------------------------------
+
 def countPromotionalPeriods(orders):
     n = len(orders)
 
@@ -76,9 +82,3 @@ if __name__ == '__main__':
     print(countPromotionalPeriods([10, 5, 3, 1, 2, 4, 6, 8]))  # 6
     print(countPromotionalPeriods([10, 7, 100]))  # 1
 ```
-
----
-
-> **👤 ac_coder_tutor** — 在职工程师的「算法每日一题」  
-> 📕 小红书 / 🛰️ 微信 `ac_coder_tutor` · 📮 `accoderoverseas@gmail.com`  
-> 找工 OA/VO 真题拆解 · 留学生 CS 课程辅导 → [联系我](/contact/)

@@ -42,6 +42,12 @@ Returns the number of different ways of obtaining a sorted array by the procedur
 
 ## AC Code
 ```python
+# ------------------------------------------------------------
+#  ac_coder_tutor  ·  Daily Algorithm Problem (OA/VO)
+#  RedBook / WeChat: ac_coder_tutor  |  accoderoverseas@gmail.com
+#  OA/VO breakdowns & CS course tutoring for students abroad
+# ------------------------------------------------------------
+
 def solution(A):
     n = len(A)
 
@@ -68,9 +74,3 @@ if __name__ == '__main__':
     print(solution([5, 5, 5, 5, 5]))  # 4
     print(solution([7, 6, 5, 4, 3, 2, 1]))  # 0
 ```
-
----
-
-> **👤 ac_coder_tutor** — 在职工程师的「算法每日一题」  
-> 📕 小红书 / 🛰️ 微信 `ac_coder_tutor` · 📮 `accoderoverseas@gmail.com`  
-> 找工 OA/VO 真题拆解 · 留学生 CS 课程辅导 → [联系我](/contact/)

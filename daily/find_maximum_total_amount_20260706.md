@@ -54,6 +54,12 @@ Given an integer `k`, select `k` **consecutive** bags so that the total amount o
 
 ## AC Code
 ```python
+# ------------------------------------------------------------
+#  ac_coder_tutor  ·  Daily Algorithm Problem (OA/VO)
+#  RedBook / WeChat: ac_coder_tutor  |  accoderoverseas@gmail.com
+#  OA/VO breakdowns & CS course tutoring for students abroad
+# ------------------------------------------------------------
+
 import bisect
 
 
@@ -113,9 +119,3 @@ if __name__ == '__main__':
     print(maxTotalAmount([[1, 3, 10], [6, 8, 10]], 6))  # 40
     print(maxTotalAmount([[1, 100, 5]], 200))  # 500
 ```
-
----
-
-> **👤 ac_coder_tutor** — 在职工程师的「算法每日一题」  
-> 📕 小红书 / 🛰️ 微信 `ac_coder_tutor` · 📮 `accoderoverseas@gmail.com`  
-> 找工 OA/VO 真题拆解 · 留学生 CS 课程辅导 → [联系我](/contact/)
