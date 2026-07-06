@@ -58,37 +58,40 @@ import bisect
 
 
 def getRangeMoney(segment, starts, ends, pre_sum, left, right):
+    # total money in bag range [left, right]; returns 0 for an empty range
     if left > right:
         return 0
 
+    # segments intersecting [left, right]: those with end >= left and start <= right
     lo = bisect.bisect_left(ends, left)
     hi = bisect.bisect_right(starts, right) - 1
     if lo > hi:
         return 0
 
-    res = pre_sum[hi + 1] - pre_sum[lo]
+    res = pre_sum[hi + 1] - pre_sum[lo]   # sum of the fully/partially covered segments
     l1, r1, v1 = segment[lo]
-    if l1 < left:
+    if l1 < left:                         # trim the part of the first segment before `left`
         res -= (left - l1) * v1
 
     l2, r2, v2 = segment[hi]
-    if r2 > right:
+    if r2 > right:                        # trim the part of the last segment after `right`
         res -= (r2 - right) * v2
     return res
 
 
 def maxTotalAmount(segment, k):
     n = len(segment)
-    segment = sorted(segment, key=lambda x: x[0])
+    segment = sorted(segment, key=lambda x: x[0])   # sort segments by their start
     starts = []
     ends = []
-    pre_sum = [0] * (n + 1)
+    pre_sum = [0] * (n + 1)                          # prefix sum of money per segment
     for i in range(n):
         l, r, v = segment[i]
         starts.append(l)
         ends.append(r)
         pre_sum[i + 1] = pre_sum[i] + (r - l + 1) * v
 
+    # F(L) is piecewise-linear, so the optimum window starts at a boundary-aligned point
     candidates = set()
     for l, r, v in segment:
         candidates.add(l)
@@ -98,6 +101,7 @@ def maxTotalAmount(segment, k):
 
     MOD = 10 ** 9 + 7
     res = 0
+    # compare REAL values here; take the modulo only once at the very end
     for l in candidates:
         res = max(res, getRangeMoney(segment, starts, ends, pre_sum, l, l + k - 1))
     return res % MOD
@@ -109,3 +113,9 @@ if __name__ == '__main__':
     print(maxTotalAmount([[1, 3, 10], [6, 8, 10]], 6))  # 40
     print(maxTotalAmount([[1, 100, 5]], 200))  # 500
 ```
+
+---
+
+> **👤 ac_coder_tutor** — 在职工程师的「算法每日一题」  
+> 📕 小红书 / 🛰️ 微信 `ac_coder_tutor` · 📮 `accoderoverseas@gmail.com`  
+> 找工 OA/VO 真题拆解 · 留学生 CS 课程辅导 → [联系我](/contact/)

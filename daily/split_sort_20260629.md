@@ -44,14 +44,18 @@ Returns the number of different ways of obtaining a sorted array by the procedur
 ```python
 def solution(A):
     n = len(A)
+
+    # prefix maximum: dp_left[i] = max(A[0..i])
     dp_left = [0] * n; dp_left[0] = A[0]
     for i in range(1, n):
         dp_left[i] = max(dp_left[i - 1], A[i])
 
+    # suffix minimum: dp_right[i] = min(A[i..n-1])
     dp_right = [0] * n; dp_right[n - 1] = A[n - 1]
     for i in range(n - 2, -1, -1):
         dp_right[i] = min(dp_right[i + 1], A[i])
 
+    # a split after index i is valid iff max(left part) <= min(right part)
     res = 0
     for i in range(n - 1):
         if dp_left[i] <= dp_right[i + 1]:
@@ -64,3 +68,9 @@ if __name__ == '__main__':
     print(solution([5, 5, 5, 5, 5]))  # 4
     print(solution([7, 6, 5, 4, 3, 2, 1]))  # 0
 ```
+
+---
+
+> **👤 ac_coder_tutor** — 在职工程师的「算法每日一题」  
+> 📕 小红书 / 🛰️ 微信 `ac_coder_tutor` · 📮 `accoderoverseas@gmail.com`  
+> 找工 OA/VO 真题拆解 · 留学生 CS 课程辅导 → [联系我](/contact/)

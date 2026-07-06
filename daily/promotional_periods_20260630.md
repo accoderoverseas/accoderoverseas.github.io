@@ -52,16 +52,20 @@ All integers in orders are distinct.
 def countPromotionalPeriods(orders):
     n = len(orders)
 
-    stack = []
-    res = 0
+    stack = []          # indices whose values are strictly decreasing (bottom -> top)
+    res = 0             # count of mutually "visible" pairs
     for i in range(n):
+        # pop shorter elements: each popped one can "see" the current order[i]
         while stack and orders[stack[-1]] < orders[i]:
             stack.pop()
             res += 1
 
+        # the first taller element still on the stack can also see order[i]
         if stack:
             res += 1
         stack.append(i)
+
+    # exclude the n-1 adjacent pairs (length-2 windows are not valid periods)
     return res - (n - 1)
 
 
@@ -72,3 +76,9 @@ if __name__ == '__main__':
     print(countPromotionalPeriods([10, 5, 3, 1, 2, 4, 6, 8]))  # 6
     print(countPromotionalPeriods([10, 7, 100]))  # 1
 ```
+
+---
+
+> **👤 ac_coder_tutor** — 在职工程师的「算法每日一题」  
+> 📕 小红书 / 🛰️ 微信 `ac_coder_tutor` · 📮 `accoderoverseas@gmail.com`  
+> 找工 OA/VO 真题拆解 · 留学生 CS 课程辅导 → [联系我](/contact/)

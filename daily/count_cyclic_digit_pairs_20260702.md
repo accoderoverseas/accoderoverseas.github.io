@@ -75,12 +75,15 @@ def solution(a):
     n = len(a)
     freq = collections.defaultdict(int)
     for i in range(n):
+        # canonical form = lexicographically smallest rotation
+        # (kept as a fixed-length string so leading zeros are preserved)
         cur_num, min_num = str(a[i]), str(a[i])
         for j in range(len(cur_num)):
-            cur_num = cur_num[-1] + cur_num[:-1]
+            cur_num = cur_num[-1] + cur_num[:-1]   # rotate right by one digit
             min_num = min(min_num, cur_num)
         freq[min_num] += 1
 
+    # each group of k numbers sharing a canonical form contributes C(k, 2) pairs
     res = 0
     for cur_num in freq:
         cur_freq = freq[cur_num]
@@ -98,3 +101,9 @@ if __name__ == '__main__':
     print(solution([11, 11]))  # 1
     print(solution([1212, 2121]))  # 1
 ```
+
+---
+
+> **👤 ac_coder_tutor** — 在职工程师的「算法每日一题」  
+> 📕 小红书 / 🛰️ 微信 `ac_coder_tutor` · 📮 `accoderoverseas@gmail.com`  
+> 找工 OA/VO 真题拆解 · 留学生 CS 课程辅导 → [联系我](/contact/)

@@ -67,6 +67,8 @@ import collections
 
 def solution(travelPhotos):
     n = len(travelPhotos)
+
+    # build an undirected adjacency list; every photo is one edge, also track degrees
     graph = collections.defaultdict(list)
     deg = collections.defaultdict(int)
     for i in range(n):
@@ -74,6 +76,7 @@ def solution(travelPhotos):
         graph[u].append(v); graph[v].append(u)
         deg[u] += 1; deg[v] += 1
 
+    # an endpoint of the path has degree 1 -> start the walk there
     que = collections.deque([])
     start = 0
     for cur_node in deg:
@@ -82,6 +85,7 @@ def solution(travelPhotos):
             start = cur_node
             break
 
+    # walk the simple path from one endpoint to the other
     vis = {start}
     res = []
     while que:
@@ -100,3 +104,9 @@ if __name__ == '__main__':
     print(solution([[8, 1], [9, 3], [5, 8], [1, 9]]))  # [5, 8, 1, 9, 3], or [3, 9, 1, 8, 5]
     print(solution([[7, 2]]))  # [7, 2], or [2, 7]
 ```
+
+---
+
+> **👤 ac_coder_tutor** — 在职工程师的「算法每日一题」  
+> 📕 小红书 / 🛰️ 微信 `ac_coder_tutor` · 📮 `accoderoverseas@gmail.com`  
+> 找工 OA/VO 真题拆解 · 留学生 CS 课程辅导 → [联系我](/contact/)
