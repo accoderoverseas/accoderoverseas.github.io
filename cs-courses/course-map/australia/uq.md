@@ -4,6 +4,7 @@ parent: 澳洲
 grand_parent: 学校课程图谱
 nav_order: 5
 permalink: /cs-courses/course-map/australia/uq/
+published_at: "2026-07-05 17:18:05"
 ---
 
 # 昆士兰大学（University of Queensland, UQ）

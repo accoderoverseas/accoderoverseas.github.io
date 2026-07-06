@@ -3,6 +3,7 @@ title: Minimum Adjustments
 parent: Amazon
 grand_parent: 求职找工OA/VO真题拆解
 nav_order: 2
+published_at: "2026-07-04 08:48:54"
 ---
 
 # Amazon - Minimum Adjustments (Prefix ±1 to Zero)

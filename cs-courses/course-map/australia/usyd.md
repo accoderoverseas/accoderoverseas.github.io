@@ -4,6 +4,7 @@ parent: 澳洲
 grand_parent: 学校课程图谱
 nav_order: 3
 permalink: /cs-courses/course-map/australia/usyd/
+published_at: "2026-07-05 17:18:05"
 ---
 
 # 悉尼大学（University of Sydney, USYD）

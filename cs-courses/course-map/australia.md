@@ -5,6 +5,7 @@ grand_parent: 留学生CS课程
 nav_order: 2
 has_children: true
 permalink: /cs-courses/course-map/australia/
+published_at: "2026-07-05 15:54:23"
 ---
 
 # 澳洲 · 学校课程图谱

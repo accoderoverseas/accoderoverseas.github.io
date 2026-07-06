@@ -3,6 +3,7 @@ title: Reconstruct the Journey
 parent: Capital One
 grand_parent: 求职找工OA/VO真题拆解
 nav_order: 1
+published_at: "2026-07-04 08:48:54"
 ---
 
 # Capital One - Reconstruct the Journey

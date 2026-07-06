@@ -4,6 +4,7 @@ parent: 澳洲
 grand_parent: 学校课程图谱
 nav_order: 7
 permalink: /cs-courses/course-map/australia/uts/
+published_at: "2026-07-05 17:18:05"
 ---
 
 # 悉尼科技大学（University of Technology Sydney, UTS）

@@ -3,6 +3,7 @@ title: 2026-06-30 · Promotional Periods
 parent: 算法每日一题
 nav_order: 20260630
 permalink: /daily/promotional_periods_20260630/
+published_at: "2026-07-04 15:32:06"
 ---
 
 # Amazon - Promotional Periods

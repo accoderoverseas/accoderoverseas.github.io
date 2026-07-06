@@ -4,6 +4,7 @@ parent: 澳洲
 grand_parent: 学校课程图谱
 nav_order: 4
 permalink: /cs-courses/course-map/australia/monash/
+published_at: "2026-07-05 17:18:05"
 ---
 
 # 莫纳什大学（Monash University）

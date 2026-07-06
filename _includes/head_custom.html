@@ -43,6 +43,13 @@
   .contact-footer a { color: inherit; text-decoration: none; }
   .contact-footer a:hover { text-decoration: underline; }
 
+  /* 文章底部「发布时间 / 作者」署名行（首页无 published_at 故不显示） */
+  .post-byline {
+    margin-top: 2.5rem; padding-top: .8rem;
+    border-top: 1px solid #eaecef;
+    color: #7a7a7a; font-size: 13px;
+  }
+
   /* 水印的「无 JS」兜底：JS 正常时会给 <html> 加 .wm-js 使其让位给自愈水印，避免叠加变深 */
   html:not(.wm-js)::before {
     content: ""; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
@@ -227,3 +234,24 @@
     else build();
   })();
 </script>
+
+{% if page.published_at %}
+<script>
+  (function () {
+    /* 文章底部署名：发布时间取自 front matter（git 首次提交时间），作者固定 */
+    var PUB = {{ page.published_at | jsonify }};
+    var AUTHOR = 'ac_coder_tutor';
+    function add() {
+      var host = document.querySelector('.main-content');
+      if (!host || document.getElementById('post-byline')) return;
+      var d = document.createElement('div');
+      d.id = 'post-byline';
+      d.className = 'post-byline';
+      d.textContent = '发布时间：' + PUB + '，作者：' + AUTHOR;
+      host.appendChild(d);
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', add);
+    else add();
+  })();
+</script>
+{% endif %}
