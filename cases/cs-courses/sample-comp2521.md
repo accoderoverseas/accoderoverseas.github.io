@@ -5,6 +5,8 @@ grand_parent: 辅导案例
 nav_order: 1
 permalink: /cases/cs-courses/sample-comp2521/
 published_at: "2026-07-06 22:39:44"
+nav_exclude: true
+search_exclude: true
 ---
 
 # 示例 · UNSW COMP2521：从挂科边缘到 HD

@@ -4,6 +4,8 @@ nav_order: 5
 has_children: true
 permalink: /cases/
 published_at: "2026-07-06 22:39:44"
+nav_exclude: true
+search_exclude: true
 ---
 
 # 辅导案例（Case Studies）
