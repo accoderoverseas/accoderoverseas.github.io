@@ -8,10 +8,10 @@ permalink: /cs-courses/course-map/australia/uq/
 
 # 昆士兰大学（University of Queensland, UQ）
 
-CS 相关课程体系一览（课程号 + 课程名来自官方课程列表，按**本科 / 研究生**与课程类型归类整理）。
+CS 相关课程体系一览（课程号 + 课程名来自官方课程列表，**按课程类型归类**，本科与研究生课程合并整理）。
 > 深度解读（**课程简介 · 主要知识点 · 整体难度 · 建议学习路线**）正按各校 **2026 官方 handbook / outline** 逐门核对补充中。想优先某几门？→ [联系我](/contact/)。
 
-## 本科（Undergraduate）
+## CS 课程体系（按类型）
 
 **编程 · 软件工程 · 项目**
 
@@ -25,6 +25,11 @@ CS 相关课程体系一览（课程号 + 课程名来自官方课程列表，�
 - `COMP3880` — International Software Development
 - `CSSE4010` — Digital System Design
 - `INFS4205 / INFS7205` — Advanced Techniques for High Dimensional Data
+- `CSSE7023` — Advanced Software Engineering
+- `COMP7024` — Conceptual Foundation of Computer Programming
+- `CSSE7030` — Introduction to Software Engineering
+- `COMP7110` — Introduction to Software Innovation
+- `CSSE7620` — Model-Driven Software Engineering
 
 **算法 · 数据结构 · 理论**
 
@@ -35,6 +40,10 @@ CS 相关课程体系一览（课程号 + 课程名来自官方课程列表，�
 - `COMP4403` — Compilers and Interpreters
 - `COMP4500` — Advanced Algorithms and Data Structures
 - `CSSE4630` — Principles of Program Analysis
+- `CSSE7100` — Reasoning about Programs
+- `COMP7500` — Advanced Algorithms and Data Structures
+- `COMP7505` — Algorithms and Data Structures
+- `COMP7510` — Programming Language Theory
 
 **计算机系统 · 体系结构**
 
@@ -47,45 +56,6 @@ CS 相关课程体系一览（课程号 + 课程名来自官方课程列表，�
 - `INFS3208` — Cloud Computing
 - `COMP3301` — Operating Systems Architecture
 - `CSSE4011` — Advanced Embedded Systems
-
-**数据库 · 信息系统**
-
-- `INFS1200` — Introduction to Information Systems
-- `INFS2200` — Relational Database Systems
-- `INFS3200` — Advanced Database Systems
-- `INFS3202` — Web Information Systems
-
-**人工智能 · 机器学习**
-
-- `COMP3702` — Artificial Intelligence
-- `COMP3710` — Pattern Recognition and Analysis
-- `INFS4203` — Data Mining
-- `COMP4702` — Machine Learning
-- `COMP4703` — Natural Language Processing
-
-**数据科学 · 数据分析**
-
-- `COMP2011` — Fundamentals of Data Science
-
-## 研究生（Postgraduate）
-
-**编程 · 软件工程 · 项目**
-
-- `CSSE7023` — Advanced Software Engineering
-- `COMP7024` — Conceptual Foundation of Computer Programming
-- `CSSE7030` — Introduction to Software Engineering
-- `COMP7110` — Introduction to Software Innovation
-- `CSSE7620` — Model-Driven Software Engineering
-
-**算法 · 数据结构 · 理论**
-
-- `CSSE7100` — Reasoning about Programs
-- `COMP7500` — Advanced Algorithms and Data Structures
-- `COMP7505` — Algorithms and Data Structures
-- `COMP7510` — Programming Language Theory
-
-**计算机系统 · 体系结构**
-
 - `CSSE6400` — Software Architecture
 - `CSSE7201` — Introduction to Computer Systems
 - `CSSE7231` — Computer Systems Principles and Programming
@@ -95,6 +65,10 @@ CS 相关课程体系一览（课程号 + 课程名来自官方课程列表，�
 
 **数据库 · 信息系统**
 
+- `INFS1200` — Introduction to Information Systems
+- `INFS2200` — Relational Database Systems
+- `INFS3200` — Advanced Database Systems
+- `INFS3202` — Web Information Systems
 - `INFS7202` — Web Information Systems
 - `INFS7410` — Information Retrieval and Web Search
 - `INFS7900` — Introduction to Information Systems
@@ -103,13 +77,21 @@ CS 相关课程体系一览（课程号 + 课程名来自官方课程列表，�
 
 **人工智能 · 机器学习**
 
+- `COMP3702` — Artificial Intelligence
+- `COMP3710` — Pattern Recognition and Analysis
+- `INFS4203` — Data Mining
+- `COMP4702` — Machine Learning
+- `COMP4703` — Natural Language Processing
 - `INFS7203` — Data Mining
 - `COMP7703` — Machine Learning
+
+**数据科学 · 数据分析**
+
+- `COMP2011` — Fundamentals of Data Science
 
 **网络安全**
 
 - `COMP7710` — Artificial Intelligence for Cyber Security
-
 ---
 
 ## 需要按这所学校定制辅导？

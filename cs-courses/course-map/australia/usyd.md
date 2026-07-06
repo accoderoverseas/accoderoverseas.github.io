@@ -8,10 +8,10 @@ permalink: /cs-courses/course-map/australia/usyd/
 
 # 悉尼大学（University of Sydney, USYD）
 
-CS 相关课程体系一览（课程号 + 课程名来自官方课程列表，按**本科 / 研究生**与课程类型归类整理）。
+CS 相关课程体系一览（课程号 + 课程名来自官方课程列表，**按课程类型归类**，本科与研究生课程合并整理）。
 > 深度解读（**课程简介 · 主要知识点 · 整体难度 · 建议学习路线**）正按各校 **2026 官方 handbook / outline** 逐门核对补充中。想优先某几门？→ [联系我](/contact/)。
 
-## 本科（Undergraduate）
+## CS 课程体系（按类型）
 
 **编程 · 软件工程 · 项目**
 
@@ -47,57 +47,6 @@ CS 相关课程体系一览（课程号 + 课程名来自官方课程列表，�
 - `INFO4992` — IT Research Thesis B
 - `INFO4994 / INFO5994` — Advanced Topics in Computer Science
 - `INFO4999` — Computer Science Honours Result
-
-**算法 · 数据结构 · 理论**
-
-- `COMP2022` — Models of Computation
-- `COMP2123 / COMP9123` — Data Structures and Algorithms
-- `COMP2823` — Data Structures and Algorithms (Adv)
-- `COMP2922` — Models of Computation (Adv)
-- `COMP3027 / COMP3927` — Algorithm Design
-- `COMP3109` — Programming Languages and Paradigms
-- `COMP3530 / COMP4530 / COMP5530` — Discrete Optimization
-- `COMP4445 / COMP5045` — Computational Geometry
-
-**计算机系统 · 体系结构**
-
-- `COMP2017 / COMP9017` — Systems Programming
-- `COMP4348 / COMP5348` — Enterprise Scale Software Architecture
-- `COMP4349 / COMP5349` — Cloud Computing
-- `COMP4426 / COMP5426` — Parallel and Distributed Computing
-- `COMP4447 / COMP5047` — Pervasive Computing
-
-**计算机网络**
-
-- `COMP4416 / COMP5416` — Advanced Network Technologies
-
-**数据库 · 信息系统**
-
-- `INFO4406 / INFO5306` — Enterprise Healthcare Information Systems
-
-**人工智能 · 机器学习**
-
-- `COMP3308` — Introduction to Artificial Intelligence
-- `COMP3608` — Introduction to Artificial Intelligence (Adv)
-- `COMP4328` — COMP5328/COMP8328 - Advanced Machine Learning
-- `COMP4329 / COMP5329` — Deep Learning
-- `COMP4446 / COMP5046` — Natural Language Processing
-
-**数据科学 · 数据分析**
-
-- `INFO2150` — Introduction to Health Data Science
-- `COMP4448 / COMP5048` — Visual Analytics
-
-**网络安全**
-
-- `INFO2222` — Computing 2 Usability and Security
-- `COMP4617 / COMP5617` — Empirical Security Analysis and Engineering
-- `COMP4618 / COMP5618` — Applied Cybersecurity
-
-## 研究生（Postgraduate）
-
-**编程 · 软件工程 · 项目**
-
 - `INFO5010` — IT Advanced Topic A
 - `INFO5011` — IT Advanced Topic B
 - `COMP5206` — Information Technologies and Systems
@@ -116,32 +65,59 @@ CS 相关课程体系一览（课程号 + 课程名来自官方课程列表，�
 
 **算法 · 数据结构 · 理论**
 
+- `COMP2022` — Models of Computation
+- `COMP2123 / COMP9123` — Data Structures and Algorithms
+- `COMP2823` — Data Structures and Algorithms (Adv)
+- `COMP2922` — Models of Computation (Adv)
+- `COMP3027 / COMP3927` — Algorithm Design
+- `COMP3109` — Programming Languages and Paradigms
+- `COMP3530 / COMP4530 / COMP5530` — Discrete Optimization
+- `COMP4445 / COMP5045` — Computational Geometry
 - `COMP9007` — Algorithms
+
+**计算机系统 · 体系结构**
+
+- `COMP2017 / COMP9017` — Systems Programming
+- `COMP4348 / COMP5348` — Enterprise Scale Software Architecture
+- `COMP4349 / COMP5349` — Cloud Computing
+- `COMP4426 / COMP5426` — Parallel and Distributed Computing
+- `COMP4447 / COMP5047` — Pervasive Computing
 
 **计算机网络**
 
+- `COMP4416 / COMP5416` — Advanced Network Technologies
 - `COMP5416` — Advanced Network Technologies
 
 **数据库 · 信息系统**
 
+- `INFO4406 / INFO5306` — Enterprise Healthcare Information Systems
 - `COMP9110` — System Analysis and Modelling
 - `COMP9120` — Database Management Systems
 
 **人工智能 · 机器学习**
 
+- `COMP3308` — Introduction to Artificial Intelligence
+- `COMP3608` — Introduction to Artificial Intelligence (Adv)
+- `COMP4328` — COMP5328/COMP8328 - Advanced Machine Learning
+- `COMP4329 / COMP5329` — Deep Learning
+- `COMP4446 / COMP5046` — Natural Language Processing
 - `COMP5318` — Machine Learning and Data Mining
 - `COMP9208` — Artificial Intelligence and Society
 
 **数据科学 · 数据分析**
 
+- `INFO2150` — Introduction to Health Data Science
+- `COMP4448 / COMP5048` — Visual Analytics
 - `INFO5060` — Data Analytics and Business Intelligence
 - `COMP5310` — Principles of Data Science
 - `COMP5339` — Data Engineering
 
 **网络安全**
 
+- `INFO2222` — Computing 2 Usability and Security
+- `COMP4617 / COMP5617` — Empirical Security Analysis and Engineering
+- `COMP4618 / COMP5618` — Applied Cybersecurity
 - `COMP8617` — Empirical Security Analysis and Engineering
-
 ---
 
 ## 需要按这所学校定制辅导？
