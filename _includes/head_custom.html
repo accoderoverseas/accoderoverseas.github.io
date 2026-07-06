@@ -49,6 +49,18 @@
     color: #8a8a8a; font-size: 13px;
   }
 
+  /* 辅导案例：结果徽章 + 配图占位框 */
+  .case-badge {
+    display: inline-block; padding: 1px 10px; border-radius: 999px;
+    background: #eae6fb; color: #5b3fd6; font-size: 12px; font-weight: 600;
+    vertical-align: middle;
+  }
+  .case-figph {
+    margin: .6rem 0; padding: 12px 14px;
+    border: 1px dashed #cfcde0; border-radius: 8px;
+    background: #faf9ff; color: #756fa6; font-size: 13px;
+  }
+
   /* 水印的「无 JS」兜底：JS 正常时会给 <html> 加 .wm-js 使其让位给自愈水印，避免叠加变深 */
   html:not(.wm-js)::before {
     content: ""; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
@@ -76,6 +88,9 @@
       '澳洲': 'Australia',
       '欧洲': 'Europe',
       '亚洲': 'Asia',
+      '辅导案例': 'Case Studies',
+      '求职找工 OA/VO 案例': 'Job-Hunting (OA/VO) Cases',
+      '留学生 CS 课程案例': 'CS Course Cases',
       '联系我': 'Contact'
     };
     var SEARCH_PH = { zh: 'Search', en: 'Search' };
