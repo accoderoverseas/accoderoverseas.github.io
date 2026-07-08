@@ -11,8 +11,8 @@ published_at: "2026-07-05 17:18:05"
 /* 课程号-课程名统一紫色加粗（仅本页生效）：第一部分课程小标题 + 第二部分清单条目 */
 .main-content h4 { color: #7253ed; }
 .main-content h4 code { color: #7253ed; background: transparent; font-weight: 700; }
-.main-content li:has(> code) { color: #7253ed; font-weight: 700; }
-.main-content li:has(> code) code { color: #7253ed; background: transparent; font-weight: 700; }
+.main-content li:has(> code:first-child) { color: #7253ed; font-weight: 700; }
+.main-content li:has(> code:first-child) > code:first-child { color: #7253ed; background: transparent; font-weight: 700; }
 </style>
 
 # 新南威尔士大学（UNSW Sydney）
