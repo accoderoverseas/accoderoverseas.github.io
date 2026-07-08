@@ -7,6 +7,14 @@ permalink: /cs-courses/course-map/australia/monash/
 published_at: "2026-07-05 17:18:05"
 ---
 
+<style>
+/* 课程号-课程名统一紫色加粗（仅本页生效）：第一部分课程小标题 + 第二部分清单条目 */
+.main-content h4 { color: #7253ed; }
+.main-content h4 code { color: #7253ed; background: transparent; font-weight: 700; }
+.main-content li:has(> code) { color: #7253ed; font-weight: 700; }
+.main-content li:has(> code) code { color: #7253ed; background: transparent; font-weight: 700; }
+</style>
+
 # 莫纳什大学（Monash University）
 
 Monash CS 采用 **FIT** 课程编码（数学类为 **MAT**），本科（FIT1xxx–FIT4xxx）与研究生（FIT5xxx / FIT9xxx）课程合并整理。下方先给出**核心 / 高频课程详解**，再附**完整课程清单**（均**按课程类型归类**）。
