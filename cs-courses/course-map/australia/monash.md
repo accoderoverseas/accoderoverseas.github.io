@@ -19,62 +19,69 @@ published_at: "2026-07-05 17:18:05"
 
 Monash CS 采用 **FIT** 课程编码（数学类为 **MAT**），本科（FIT1xxx–FIT4xxx）与研究生（FIT5xxx / FIT9xxx）课程合并整理。下方先给出**核心 / 高频课程详解**，再附**完整课程清单**（均**按课程类型归类**）。
 
-> 说明：每门课的 **课程简介 · 主要知识点 · 成绩组成** 依据 Monash **2026 官方 handbook / unit guide** 整理；**整体难度 · 建议学习路线** 为 **主观经验参考**（因人而异）。部分课程 2026 年处于考核改版过渡期，成绩组成最终一律以当学期 unit guide 为准。来源见页面底部。
+> 说明：本页的 **课程名称 · 课程简介 · 主要知识点 · 2026 S2 开课信息 · 成绩组成** 已于 **2026-07-13** 逐项对照 Monash **2026 官方 Handbook**；其中“2026 S2 开课”指官方标记为 **Second semester** 的 offering。**整体难度 · 建议学习路线** 为主观经验参考（因人而异）；考核细节仍可在开学前调整，最终以当学期 Moodle / unit guide 为准。来源见页面底部。
 
 ## 核心 / 高频课程详解
 
 ### 编程 · 软件工程 · 项目
 
 #### `FIT1045` — Introduction to Programming（编程入门）
-- **课程简介**：Monash 计算机专业的第一门编程课，使用 **Python** 从零教起。它不只是教语法，而是训练你"像程序员一样思考"——把一个现实问题拆解成算法，再用代码实现，并评估算法的效率与局限。是整个 CS 学位的基石课。
-- **主要知识点**：Python 基础语法、控制结构（分支 / 循环）、数据类型、函数与模块化、递归、算法设计与问题分解、计算成本与算法复杂度评估、算法的局限性。
-- **整体难度**：⭐⭐⭐☆☆ — 语法本身不难，真正的坎在"算法思维"和递归：很多零基础同学卡在如何把问题抽象成可编程的步骤。
-- **成绩组成**：Workshops 12% + Tutorial Preparation 8% + In-semester Tests 8% + Assignment 22% + 期末考试（2h10m）50%（即平时 50% + 期末 50%；通常设有 hurdle 门槛，考试与平时分各需约 45%，以当学期 unit guide 为准）。
-- **建议学习路线**：零基础也完全能选，关键是从第一周就每天动手写一点，别把 tutorial preparation 攒着——它其实是帮你不掉队的缓冲。递归和循环不变式是最容易卡住你的地方，卡住很正常，多画几遍执行过程就通了。学完你就能顺畅接上 FIT1008 / FIT2004；本来就有底子的话可以直接挑战进阶版 FIT1053。
+- **课程简介**：2026 版聚焦编程基础：从控制结构、内置与复合数据类型、函数与模块化，到基础库的查找与使用，同时强调单元测试、文档和可读性等良好开发实践。官方资源仍以 **Python** 为主，但课程已不再把递归、复杂度和“算法局限”列入 2026 学习成果。
+- **主要知识点**：变量、分支与循环、内置 / 复合数据类型、自定义函数与数据结构、模块化、基础库的发现与复用、单元测试、基础文档与代码可读性。
+- **2026 S2 开课**：Clayton 校区 **On-campus**；Malaysia 校区 **On-campus**。
+- **整体难度**：⭐⭐⭐☆☆ — 语法本身不难，难点在持续完成 portfolio 任务、当面说清自己的代码，并通过课内编程测试的能力门槛。
+- **成绩组成**（2026 S2）：**Learning Project Portfolio 100%**；In-class tests 权重为 0%，但与 portfolio 中的 pass tasks 一样属于 **competency hurdle**，未达到规定标准则不能通过该课。
+- **建议学习路线**：零基础也可以选，但 portfolio 是持续签核制，不适合期末突击。每周按时完成 pass tasks，并练习不看答案解释代码的设计、测试和可读性。学完后可衔接 FIT1008 / FIT2004；已有扎实编程基础的同学可考虑 S1 开设的进阶版 FIT1053。
 
 #### `FIT1050` — Web Fundamentals（Web 基础）
-- **课程简介**：面向 Web 开发的入门课，带你俯瞰整个 Web 技术生态。它强调"广度优先"——让你理解一个真实 Web 系统从前端到后端会涉及哪些技术、每种技术的取舍，以及开发者需要解决的关键问题，并通过团队项目动手做出一个网站。
-- **主要知识点**：Web 与 Web 应用核心技术、前端页面构建、Web 技术的优劣势与适用场景对比、Web 应用开发基本任务、团队协作开发流程。
+- **课程简介**：广度优先的 Web 开发入门课，从技术原理、媒体素材、设计预制到前端实现，训练你为真实场景规划、构建和测试网站，并理解 Web 技术对社会的影响。
+- **主要知识点**：Web 基础技术及其社会影响、媒体素材优化 / 兼容性 / 可访问性、网站设计原则与预制流程、HTML / CSS / JavaScript、网站测试、协作式内容与站点规划。
+- **2026 S2 开课**：**Clayton 与 Malaysia 均无标准 S2 offering**；2026 年 Clayton 仅有 S1 与 November teaching period。Monash Indonesia 另有独立的 “Monash Indonesia semester 2” offering，不等同于 Clayton / Malaysia 的 S2。
 - **整体难度**：⭐⭐☆☆☆ — 概念多但深度浅，压力主要来自多个连续的实践作业和团队协作，而非技术难度本身。
-- **成绩组成**：期末考试（2h10m）40% + Assignment 1 个人展示 10% + Assignment 2 网站重设计 15% + Assignment 3 网站开发 25% + 参与里程碑 10%（平时 60% + 期末 40%）。
-- **建议学习路线**：如果你想入门 Web 又怕难，这门课很适合——技术难度不高，选了会学得比较轻松。真正需要留意的是三个作业连着来、还有团队协作，所以别拖：把三个作业当成一条递进的项目线，HTML / CSS / JS 越早上手越好，团队作业一拿到就分工。学完它，你去修 FIT2095（全栈开发）会顺很多。
+- **成绩组成**（2026）：In-class Activity Portfolio 20% + Presentation Video 10% + Website Planning and Design 30% + Website Development Project 30% + Website Project Reflection Report 10%；**100% 平时考核，无期末考试**。
+- **建议学习路线**：技术门槛不高，但五项考核从课内 portfolio、视频展示递进到规划、开发和反思报告，需要持续投入。建议开课前熟悉 HTML / CSS / JavaScript，并从选题开始就同步考虑媒体优化、可访问性和协作流程。学完后衔接 FIT2095 会更顺。
 
 #### `FIT1051 / FIT9131` — Programming Fundamentals in Java / Programming Foundations in Java（Java 编程基础）
-- **课程简介**：这是一对"孪生课"——**FIT1051 面向本科生**、**FIT9131 面向研究生**，都用 **Java** 教授编程基础，核心都是把问题规格翻译成程序设计再实现为代码。FIT1051 更贴近工业级软件开发语境（SDLC、API 库、多类应用）；FIT9131 则更侧重面向零基础研究生的软件工程原则（可维护性、可读性、模块化，使用 BlueJ 环境）。
-- **主要知识点**：Java 语法、变量与数据类型、控制结构、方法与模块化、值类型与引用类型、自定义类与对象、继承与接口、多类应用开发、测试与调试、面向对象基础概念、代码规范与职业伦理。
+- **课程简介**：两门课分别面向本科生（FIT1051）与研究生（FIT9131），都以 **Java 面向对象编程**为核心。FIT1051 从工业 SDLC 语境、API 库、控制结构与多类应用切入；FIT9131 从问题规格到设计和实现，更强调可维护性、可读性、测试、文档、模块化与正确性推理。
+- **主要知识点**：Java 语法与控制结构、方法与模块化、值 / 引用类型、类与对象、继承与接口、封装 / 抽象 / 多态、多类应用、调试、测试策略、文档与编码标准、可维护性 / 可读性 / 模块化。
+- **2026 S2 开课**：FIT1051 — Clayton **On-campus**；FIT9131 — Clayton **On-campus**。
 - **整体难度**：⭐⭐⭐☆☆ — Java 的强类型和面向对象概念（类 / 对象 / 继承）是主要门槛，尤其对零基础的研究生（FIT9131）而言，OO 思维的建立需要时间。
-- **成绩组成**：
-  - FIT1051：Pre-reading Quizzes 10% + Workshop / Short Quizzes 10% + Laboratory Assessments 20% + 期末考试（3h10m）60%。
-  - FIT9131：Pre-tutorial tasks 5% + Assignment 1 10% + Assignment 2 25% + 期末考试（2h10m）60%（以当学期 unit guide 为准）。
-- **建议学习路线**：Java 的强类型和"类 / 对象 / 继承"听起来吓人，但你只要抓住"类与对象"这一个核心慢慢建立直觉就不难了，尤其零基础的研究生别急，OO 思维本来就需要一点时间。学的时候多用 BlueJ / IDE 亲手建对象、看它怎么跑，每周 lab 跟上别攒。打好这门，你后面修 FIT2099（面向对象设计）和各种 Java 项目课都会踏实很多。
+- **成绩组成**（2026 S2）：
+  - FIT1051：Pre-reading Quizzes 10% + Assessment 1（Artefact）12% + Assessment 2（Written）15% + Assessment 3（Quiz / Test）25% + Assessment 4（Artefact）38%；**无期末考试**。
+  - FIT9131：Weekly Quizzes 10% + Assignment A 10% + Assignment B 35% + Mid-semester Test 20% + Scheduled Final Assessment 25%。测试与 final 合计、以及作业与 weekly quizzes 合计均需达到 45% hurdle，总评需达 50%。
+- **建议学习路线**：先把“类与对象”、封装、继承与多态建成可执行的心智模型，再往多类系统扩展。FIT1051 学生应提前熟悉 JDK / IDE；FIT9131 官方资源使用 BlueJ，且 S2 的 Assignment B 占 35%、两次考试合计 45%，不要只顾写作业忽略测试。两门都可为 FIT2099 打下基础。
 
 #### `FIT2001` — Systems Development（系统开发）
 - **课程简介**：从"写代码"转向"设计系统"的关键课。它教你在某种方法论框架下，把系统分析与设计当作解决问题的过程——如何采集需求、建模需求、做原型和界面设计，同时培养系统开发所需的职业软技能，贴近当代行业实践。
 - **主要知识点**：系统开发方法论、系统分析与设计流程、需求采集与需求建模、不同抽象层次的问题求解、原型设计与界面设计、职业实践技能。
+- **2026 S2 开课**：Clayton 校区 **Flexible**。
 - **整体难度**：⭐⭐⭐☆☆ — 编程量不大，难在"从技术思维切换到分析设计思维"，需求建模（如用例 / 流程图）需要严谨和规范。
-- **成绩组成**：期末考试（2h10m）50% + 平时 50%（每周 workshop 测验与参与 8% + Assignment 1 需求采集 5% + Assignment 2 需求建模 25% + Assignment 3 原型与界面设计 12%）。
+- **成绩组成**（2026 S2）：Tutorial Participation and Pre-class Activities 16% + Assignment 1 7% + Assignment 2 23% + Assignment 3 14% + Scheduled Final Assessment（2h10m）40%。平时考核合计与 final 分别需达到 45% hurdle，总评需达 50%。
 - **建议学习路线**：这门课编程量不大，别以为轻松——它的挑战在于让你从"写代码"切到"分析设计"的思维，需求建模（用例、流程图）讲究规范，一开始不适应很正常。学的时候把三个作业当成同一个项目的三个阶段前后串起来理解，重点把需求建模的规范表达练顺。想更完整地搭软工体系，可以搭配 FIT2101 / FIT2107（软件工程过程 / 质量测试）一起看。
 
 #### `FIT2095` — Full Stack Development（全栈开发）
-- **课程简介**：Monash 最受欢迎的实战课之一，教你用 JavaScript 全栈技术栈（Node.js + Express + Angular / React + MongoDB 这一类现代栈）从零构建 Web 与移动应用。覆盖前端到后端到数据库的完整链路，强调工业级技术与职业化的编程规范。（注：该课程 2026 handbook 标题已由旧称 "e-Business software technologies" 更新为 "Full stack development"。）
-- **主要知识点**：HTML5 / CSS3、现代 JavaScript（ES2015+ / 面向对象）、Ajax / JSON / XML、MVC 架构、Node.js、Angular / React、TypeScript、MongoDB、核心 API 使用、应用调试、良好编程实践与职业伦理。
-- **整体难度**：⭐⭐⭐⭐☆ — 技术栈广而杂，异步编程、前后端联调和 MongoDB 数据建模是主要难点，作业节奏快、工程量大。
-- **成绩组成**：Laboratory Assessments（11 次）20% + Workshop Quizzes（11 次）10% + Pre-reading Quizzes 10% + 期末考试（2h10m）60%（因课程改版占比可能调整，以当学期 unit guide 为准）。
-- **建议学习路线**：这门很值得选，但技术栈又广又杂、作业节奏快，别裸奔进来——最好先修过 FIT1050（Web 基础）再选会舒服很多。学的时候先把 JavaScript 异步（Promise / async-await）和 Node 基础打牢，再一层层往上叠框架，千万别一开始就贪全套；每周 lab 紧跟别掉队，掉一次很容易滚雪球。撑过这门，你去做 FIT5032 或大型 Web 项目课就有底气了。
+- **课程简介**：2026 Handbook 已正式使用 **Full Stack Development** 课名。课程以 Web / 移动端 e-Business 应用为载体，训练对现有应用的分析和调试，以及用工业级技术设计、编码和测试应用。2026 S2 的三个项目按 **后端服务器 → 数据库 → 前端与云服务集成** 递进。
+- **主要知识点**：HTML5 / CSS3、面向对象 JavaScript 与 ECMAScript 2015+、JavaScript APIs、Ajax / JSON / XML 及相关 W3C 技术、MVC、Angular / TypeScript / React 等现代前端技术、后端服务、数据库、云服务集成、应用调试、工业规范与职业伦理。
+- **2026 S2 开课**：Clayton 校区 **On-campus**；2026 年仅 S2 开设。
+- **整体难度**：⭐⭐⭐⭐☆ — 技术栈广而杂，异步编程、前后端联调、数据建模与云服务集成是主要难点，三个递进项目的工程量较大。
+- **成绩组成**（2026 S2）：Assignment 1 — Building a Backend Server 25% + Assignment 2 — Setting up a Database 35% + Assignment 3 — Integration with Frontend and Cloud Services 40%；**100% 项目考核，无期末考试**。
+- **建议学习路线**：选课前最好已具备 HTML / CSS / JavaScript 基础。三个项目前后依赖，应从第一个项目就保持清晰的 API 设计、版本控制、测试和文档，不要把数据模型与云集成留到最后。学完后可衔接 FIT5032 或更大型的 Web 项目课。
 
 #### `FIT2099` — Object Oriented Design and Implementation（面向对象设计与实现）
 - **课程简介**：把 Java 编程能力升华为"设计能力"的核心课。它教你用面向对象设计原则去构建高质量软件——先用 UML 迭代地设计中小型系统，评估设计质量，再用 Java 实现，并借助 UML 工具和版本控制系统化地开发和调试。
-- **主要知识点**：面向对象设计原则、UML 建模（类图等）、迭代式设计、设计质量评估、Java 实现、系统化调试、软件工程工具（UML 编辑器、版本控制 Git）。
+- **主要知识点**：面向对象设计原则、迭代式设计、UML 类图与交互图、需求与设计质量评估、抽象 / 信息隐藏 / 继承 / 多态、Java 实现、重构与系统化调试、IDE / UML 工具 / 版本控制、同伴协作开发。
+- **2026 S2 开课**：Clayton 校区 **Flexible**；Malaysia 校区 **On-campus**。
 - **整体难度**：⭐⭐⭐⭐☆ — 难在"好设计"没有唯一答案，设计原则（职责分配、可扩展性）的权衡需要经验；把 UML 设计准确落地为代码也考验功力。
-- **成绩组成**：Java Bootcamp 10% + Assignment 1 15% + Assignment 2 15% + Assignment 3 20% + 期末考试（2h10m）40%（平时 60% + 期末 40%）。
+- **成绩组成**（2026 S2）：Bootcamp（Applied Session）20% + Workshop Quizzes 10% + Assignment 1 30% + Assignment 2 20% + Assignment 3 20%；**100% 平时考核，无期末考试**。
 - **建议学习路线**：选它之前最好先修过 FIT1051 / FIT9131，把 Java 和 OO 基础打牢，不然会挺吃力。它最"磨人"的地方是好设计没有标准答案，别慌——你要练的就是不满足于"能跑"，而是多问一句"这样设计合不合原则、好不好扩展"。三个作业通常层层递进，吃透前一个再做下一个，别急着往前赶。
 
 #### `FIT9136` — Introduction to Python Programming（Python 编程入门）
-- **课程简介**：面向研究生的 Python 入门课（2026 handbook 标题为 "Introduction to Python programming"，旧称 "Algorithms and programming foundations in Python"）。它同时教 Python 编程与基础数据结构和算法——从设计、分析到实现，涵盖列表、栈、队列、树、递归以及排序 / 查找算法，是许多 IT / 数据科学硕士的第一门编程课。
-- **主要知识点**：Python 语法与程序设计、基本数据类型与数据结构（列表 / 栈 / 队列 / 树）、递归、排序与查找算法、算法复杂度分析、程序测试与文档。
-- **整体难度**：⭐⭐⭐☆☆ — 语法友好，但对零基础研究生而言，把编程与"数据结构 + 算法复杂度"打包一起学，后半程（树、递归、复杂度）会明显加速。
-- **成绩组成**：Assignment 1 15% + In-semester Test（45 分钟）15% + Assignment 2 20% + 期末考试（2h10m）50%（以当学期 unit guide 为准）。
-- **建议学习路线**：作为研究生第一门编程课，Python 语法很友好，零基础也不用怕，只是它把"编程 + 数据结构 + 复杂度"打包一起教，后半程（树、递归、复杂度）会明显提速，你要有心理准备。建议前四周先把 Python 基础和函数练熟打好节奏，中期集中攻数据结构与递归，最后系统过一遍算法复杂度。稳稳修完，你再去碰 FIT5xxx 的编程 / 数据类课就有底了。
+- **课程简介**：面向研究生的 Python 编程入门课。2026 官方内容聚焦控制结构、内置与复合数据类型、函数和模块化、基础库的使用，以及团队中的测试、文档和可读性实践。旧版中的树、递归、排序 / 查找和复杂度分析已不在 2026 Handbook 的课程概述与学习成果中。
+- **主要知识点**：Python 变量、分支与循环、内置 / 复合数据类型、自定义函数和数据结构、模块化、基础库发现与复用、单元测试、基础文档、可读性与团队编程。
+- **2026 S2 开课**：Clayton 校区 **Flexible**；Malaysia 校区 **Evening**。
+- **整体难度**：⭐⭐⭐☆☆ — 语法友好，但 S2 由两个项目、三次课内测试和两次 discussion 构成，对持续编程练习、现场完成任务和口头解释的要求高于“只会跑代码”。
+- **成绩组成**（2026 S2）：Assignment 1 Project 20% + Assignment 2 Project 30% + In-class Tests 5% / 15% / 15% + Discussions 5% / 10%；**100% 平时考核，无期末考试**。
+- **建议学习路线**：前四周把变量、控制流、函数和数据类型练成肌肉记忆，项目开始后同步写测试和文档。三次 in-class test 合计 35%，需要平时在限时、不依赖现成答案的情况下练习；discussion 则要能说清设计与测试决策。
 
 ### 算法 · 数据结构 · 理论
 
@@ -309,7 +316,9 @@ Monash CS 采用 **FIT** 课程编码（数学类为 **MAT**），本科（FIT1x
 
 ---
 
-## 完整课程清单（按类型）
+## 完整课程清单（按类型，2026 Handbook 全年）
+
+> 下方是 2026 Handbook 中仍有效的全年课程清单，**不代表每门都在 2026 S2 开设**；实际可选学期、校区与授课模式以对应课程的 Offerings 为准。
 
 **编程 · 软件工程 · 项目**
 
@@ -322,7 +331,6 @@ Monash CS 采用 **FIT** 课程编码（数学类为 **MAT**），本科（FIT1x
 - `FIT1058` — Foundations of Computing
 - `FIT2001` — Systems Development
 - `FIT2002` — IT Project Management
-- `FIT2032` — Industry-Based Learning
 - `FIT2082` — Computer Science Research Project
 - `FIT2083` — Innovation and Research in Computer Science
 - `FIT2095` — Full Stack Development
@@ -341,12 +349,10 @@ Monash CS 采用 **FIT** 课程编码（数学类为 **MAT**），本科（FIT1x
 - `FIT4702` — Final Year Software Engineering Project B
 - `FIT5032` — Internet Applications Development
 - `FIT5057` — Project Management
-- `FIT5094` — IT for Management Decision Making
-- `FIT5102` — IT Strategy and Governance
+- `FIT5094` — Evolutionary Decision Support
 - `FIT5107` — Recordkeeping Informatics
 - `FIT5136` — Software Engineering
 - `FIT5152` — User Interface Design and Usability
-- `FIT5160` — Business Process Modelling, Design and Simulation
 - `FIT5190` — Introduction to IT Research Methods
 - `FIT5206` — Digital Continuity
 - `FIT5231` — Indigenous Data Sovereignty
@@ -455,10 +461,11 @@ Monash CS 采用 **FIT** 课程编码（数学类为 **MAT**），本科（FIT1x
 
 ## 资料来源（官方，2026）
 
-- Monash Handbook 2026：[FIT1045](https://handbook.monash.edu/2026/units/FIT1045)、[FIT2004](https://handbook.monash.edu/2026/units/FIT2004)、[FIT2099](https://handbook.monash.edu/2026/units/FIT2099)、[FIT2095](https://handbook.monash.edu/2026/units/FIT2095)、[FIT2014](https://handbook.monash.edu/2026/units/FIT2014)、[FIT3155](https://handbook.monash.edu/2026/units/FIT3155)（其余单元同址，将 URL 末段替换为对应课程号即可）
+- 本专题核心 / 高频课程：[FIT1045](https://handbook.monash.edu/2026/units/FIT1045)、[FIT1050](https://handbook.monash.edu/2026/units/FIT1050)、[FIT1051](https://handbook.monash.edu/2026/units/FIT1051)、[FIT9131](https://handbook.monash.edu/2026/units/FIT9131)、[FIT2001](https://handbook.monash.edu/2026/units/FIT2001)、[FIT2095](https://handbook.monash.edu/2026/units/FIT2095)、[FIT2099](https://handbook.monash.edu/2026/units/FIT2099)、[FIT9136](https://handbook.monash.edu/2026/units/FIT9136)
+- 其他详解课程：[FIT2004](https://handbook.monash.edu/2026/units/FIT2004)、[FIT2014](https://handbook.monash.edu/2026/units/FIT2014)、[FIT3155](https://handbook.monash.edu/2026/units/FIT3155)（其余单元同址，将 URL 末段替换为对应课程号即可）
 - 各单元每学期 unit guide / Moodle（成绩组成以当学期 unit guide 为准）
 
-> 「整体难度 / 建议学习路线」为主观经验参考；部分课程 2026 年处于考核改版过渡期，正式选课与评估请以对应学期的官方 unit guide 为准。
+> 本页于 2026-07-13 对照 2026 Handbook 与 S2 Offerings 完成核对。「整体难度 / 建议学习路线」为主观经验参考；正式选课与最终评估请以对应学期的官方 Handbook、Moodle / unit guide 为准。
 
 ---
 
