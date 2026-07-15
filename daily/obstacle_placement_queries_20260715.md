@@ -1,3 +1,11 @@
+---
+title: 2026-07-15 · Obstacle Placement Queries
+parent: 算法每日一题
+nav_order: 20260715
+permalink: /daily/obstacle_placement_queries_20260715/
+published_at: "2026-07-15 20:55:10"
+---
+
 # TikTok - Obstacle Placement Queries
 
 ## Problem
