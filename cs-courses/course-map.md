@@ -15,7 +15,6 @@ published_at: "2026-07-05 11:10:33"
 
 - 🌎 [北美](/cs-courses/course-map/north-america/)
 - 🦘 [澳洲](/cs-courses/course-map/australia/)
-- 🥝 [新西兰](/cs-courses/course-map/new-zealand/)
 - 🏰 [欧洲](/cs-courses/course-map/europe/)
 - 🏯 [亚洲](/cs-courses/course-map/asia/)
 
