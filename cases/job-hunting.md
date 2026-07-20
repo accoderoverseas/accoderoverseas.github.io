@@ -5,8 +5,6 @@ nav_order: 1
 has_children: true
 permalink: /cases/job-hunting/
 published_at: "2026-07-06 22:39:44"
-nav_exclude: true
-search_exclude: true
 ---
 
 # 求职找工 OA/VO 案例

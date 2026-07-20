@@ -40,6 +40,7 @@ nav_order: 1
 - 📆 [算法每日一题](/daily/)：每个工作日更新一篇，按统一结构拆解建立解题框架
 - 📌 [求职找工OA/VO真题拆解](/companies/)：按公司拆解真题（Google / Amazon / Capital One / TikTok …）＋ [算法数据结构知识点速查](/knowledge-points/)
 - 🎓 [留学生CS课程](/cs-courses/)：CS课程速查、学校课程图谱，按课程大纲定制辅导
+- 📈 [辅导案例](/cases/)：真实匿名的辅导 / 陪练案例，讲清怎么一步步带学生弄懂吃透、稳步上岸
 - ✉️ [联系我](/contact/)：答疑、资料领取、限时陪练、课程辅导
 
 > 💡 左上角的搜索框可以直接搜题名、公司名或知识点。
@@ -81,6 +82,7 @@ Every solution is broken down with the same structure, so you build a transferab
 - 📆 [Daily Problem](/daily/): a new problem every business day, broken down with one consistent structure
 - 📌 [OA/VO Problem Breakdowns](/companies/): real problems broken down by company (Google / Amazon / Capital One / TikTok …) ＋ [DSA Quick Reference](/knowledge-points/)
 - 🎓 [CS Courses (Study Abroad)](/cs-courses/): CS course quick reference, university course map, tutoring tailored to your syllabus
+- 📈 [Case Studies](/cases/): real, anonymized tutoring / coaching cases — how I guide students step by step to truly master the material
 - ✉️ [Contact Me](/contact/): Q&A, free resources, timed practice, course tutoring
 
 > 💡 The search box at the top-left searches problem names, companies, and topics.

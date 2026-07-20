@@ -5,8 +5,6 @@ grand_parent: 辅导案例
 nav_order: 1
 permalink: /cases/job-hunting/sample-amazon/
 published_at: "2026-07-06 22:39:44"
-nav_exclude: true
-search_exclude: true
 ---
 
 # 示例 · Amazon OA → VO 上岸
