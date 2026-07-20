@@ -2,6 +2,7 @@
 title: CS课程速查
 parent: 留学生CS课程
 nav_order: 1
+has_children: true
 permalink: /cs-courses/cheatsheet/
 published_at: "2026-07-05 11:10:33"
 ---
@@ -9,6 +10,16 @@ published_at: "2026-07-05 11:10:33"
 # CS课程速查
 
 常见 CS 专业课程方向与核心主题速查（持续更新）。用于快速定位「这门课大概学什么、重点在哪」。
+
+点击左侧展开，进入按科目分类的**知识点速查**（每科含 **知识点总结 · 典型例题 · 参考资料**，持续更新）：
+
+- 🧮 [数据结构与算法](/cs-courses/cheatsheet/dsa/)
+- 🖥️ [操作系统](/cs-courses/cheatsheet/os/)
+- 🌐 [计算机网络](/cs-courses/cheatsheet/networks/)
+- 🗄️ [数据库](/cs-courses/cheatsheet/databases/)
+- ➗ [离散数学](/cs-courses/cheatsheet/discrete-math/)
+
+## 全部方向总览
 
 | 方向      | 代表课程 / 主题                        | 关键词                                 |
 |---------|----------------------------------|-------------------------------------|
