@@ -1,0 +1,25 @@
+svg {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif;
+}
+.bg { fill: #fbf8f2; }
+.grid { opacity: .5; }
+.eyebrow { font-size: 24px; font-weight: 700; fill: #687378; letter-spacing: 3px; }
+.title { font-size: 54px; font-weight: 800; fill: #172126; }
+.subtitle { font-size: 31px; font-weight: 600; fill: #59656a; }
+.rule { fill: none; stroke-width: 8; stroke-linecap: round; }
+.spine { fill: none; stroke: #aeb6b6; stroke-width: 5; stroke-dasharray: 9 13; }
+.connector { fill: none; stroke-width: 5; stroke-linecap: round; opacity: .75; }
+.core { fill: #eaf1ef; stroke: #247b75; stroke-width: 4; }
+.core-label { font-size: 25px; font-weight: 800; fill: #247b75; letter-spacing: 3px; text-anchor: middle; }
+.core-text { font-size: 36px; font-weight: 800; fill: #1f2b2e; text-anchor: middle; }
+.panel { fill: #fffdfa; stroke-width: 4; }
+.accent { stroke-width: 9; stroke-linecap: round; }
+.code { font-size: 23px; font-weight: 800; letter-spacing: 2px; }
+.head { font-size: 33px; font-weight: 800; fill: #182226; }
+.bullet { font-size: 27px; font-weight: 570; fill: #293337; }
+.focus { fill: #f2efe7; stroke: #b68b39; stroke-width: 4; }
+.focus-label { font-size: 24px; font-weight: 800; fill: #9a7025; letter-spacing: 2px; }
+.focus-text { font-size: 29px; font-weight: 650; fill: #303638; text-anchor: middle; }
+.note { font-size: 26px; font-weight: 600; fill: #5e696d; text-anchor: middle; }
+.watermark { font-size: 34px; font-weight: 600; fill: #9ba1a2; letter-spacing: 1px; text-anchor: middle; }
+.tiny { font-size: 20px; font-weight: 600; fill: #838b8d; letter-spacing: 2px; text-anchor: middle; }
